@@ -1,0 +1,3 @@
+[submodule "ASIC/ee477-hammer-cad"]
+	path = ASIC/ee477-hammer-cad
+	url = https://github.com/bsg-external/ee477-hammer-cad.git

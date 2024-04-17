@@ -1,0 +1,11 @@
+*/build/*
+*/verdiLog/*
+*/out/*
+*/__pycache__/*
+hammer.log
+output.json
+novas.conf
+*.swp
+novas.rc
+
+image_io/v/bsg_trace_master_0.tr
