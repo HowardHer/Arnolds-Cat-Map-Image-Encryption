@@ -9,3 +9,5 @@ novas.conf
 novas.rc
 
 image_io/v/bsg_trace_master_0.tr
+image_io/py_local/
+image_io/*/__pycache__/*
