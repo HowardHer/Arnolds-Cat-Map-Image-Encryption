@@ -7,7 +7,7 @@ from PIL import Image
 # Not installed by default
 # pip3 install --user scipy
 from scipy.signal import convolve2d
-
+from math import log
 from tqdm import tqdm # Not installed by default
 import numpy as np # Not installed by default
 
@@ -72,6 +72,44 @@ def cgol_iter2(arr: np.ndarray) -> np.ndarray:
                 if ngh in (2, 3): arr_next[x, y] = 1 # Stay alive
             else:
                 if ngh == 3:      arr_next[x, y] = 1 # Become alive
+    return arr_next
+
+def ArnoldCatTransform(arr: np.ndarray) -> np.ndarray:
+    X = arr.shape[0]
+    Y = arr.shape[1]
+    arr_next = np.zeros((X, Y), dtype=np.uint8)
+    
+    for x in range(X):
+        for y in range(Y):
+            arr_next[x,y] = arr[(x+y)%X, (x+2*y)%Y]
+    return arr_next
+
+def ArnoldCatEncryption(arr: np.ndarray, key=20) -> np.ndarray:
+    X = arr.shape[0]
+    Y = arr.shape[1]
+    arr_next = arr.copy()
+    
+    for i in range(0,key):
+        arr_next = ArnoldCatTransform(arr_next)
+    return arr_next
+
+def ArnoldCatDecryption(arr: np.ndarray, key=20) -> np.ndarray:
+    X = arr.shape[0]
+    Y = arr.shape[1]
+    arr_next = arr.copy()
+    dimension = X
+    decrypt_it = dimension
+    
+    if (dimension%2==0) and 5**int(round(log(dimension/2,5))) == int(dimension/2):
+        decrypt_it = 3*dimension
+    elif 5**int(round(log(dimension,5))) == int(dimension):
+        decrypt_it = 2*dimension
+    elif (dimension%6==0) and  5**int(round(log(dimension/6,5))) == int(dimension/6):
+        decrypt_it = 2*dimension
+    else:
+        decrypt_it = int(12*dimension/7)
+    for i in range(key,decrypt_it):
+        arr_next = ArnoldCatTransform(arr_next)
     return arr_next
 
 def cgol_iter3(arr: np.ndarray) -> np.ndarray:    
@@ -166,9 +204,14 @@ def main():
     images = []
     board = board_init
     print('Generating game...')
-    for i in tqdm(range(game_length), disable=False):
-        images.append(board_to_img2(board, grid_px_size, a=alive_color, d=dead_color))
-        board = cgol_iter3(board)
+
+    # for i in tqdm(range(game_length), disable=False):
+    #     images.append(board_to_img2(board, grid_px_size, a=alive_color, d=dead_color))
+    #     board = cgol_iter3(board)
+
+    images.append(board_to_img2(board, grid_px_size, a=alive_color, d=dead_color))
+    board = ArnoldCatEncryption(board)
+    images.append(board_to_img2(board, grid_px_size, a=alive_color, d=dead_color))  
 
     # Save animated GIF
     save_gif(images, vid_out_fname, frame_dur=35)

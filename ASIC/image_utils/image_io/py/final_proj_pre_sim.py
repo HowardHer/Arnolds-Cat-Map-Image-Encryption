@@ -112,7 +112,12 @@ def main():
         with tqdm(range(game['length']), disable=False) as tq:
           for i in tq:
             add_image_to_list(images, board, cfg["display"])
-            board = cgol.cgol_iter3(board)
+
+            # board = cgol.cgol_iter3(board)
+            board = cgol.ArnoldCatEncryption(board)
+            add_image_to_list(images, board, cfg["display"])
+            board = cgol.ArnoldCatDecryption(board)
+
           # Record stats
           cgol_iterations += tq.format_dict['total']
           cgol_elapsed_time += tq.format_dict['elapsed']
@@ -131,7 +136,12 @@ def main():
             fout.write(f'# Checking frame {i+1}:\n')
             send_game_req(fout, board, 1, width, max_len) # Send next frame data (length=1)
             add_image_to_list(images, board, cfg["display"])
-            board = cgol.cgol_iter3(board)
+
+            # board = cgol.cgol_iter3(board)
+            board = cgol.ArnoldCatEncryption(board)
+            add_image_to_list(images, board, cfg["display"])
+            board = cgol.ArnoldCatDecryption(board)
+
             send_game_check(fout, board, width) # Send output check
         add_image_to_list(images, board, cfg["display"]) # Add last frame
         # Save output image
