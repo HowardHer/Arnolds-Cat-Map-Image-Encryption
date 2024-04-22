@@ -3,15 +3,56 @@ import yaml # Not installed by default
 import cgol
 import os
 import shutil
+import os.path as osp
 import numpy as np # Not installed by default
 from argparse import ArgumentParser
 from tqdm import tqdm # Not installed by default
 from math import ceil, log2
+from PIL import Image
 
 # Default values:
 trace_data_width = 64 # Data traces should be this many bits wide
 output_dir = 'out' # GIFs are written here
 default_trace_fout = 'v/bsg_trace_master_0.tr' # Default output file
+
+# PARAMS to UPDATE
+work_dir_path = '/homes/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption'
+py_dir_path = osp.join(work_dir_path, 'ASIC/image_utils/image_io/py')
+
+def get_bmp_zero_idxs(img_name):
+  save_dir = osp.join(py_dir_path, 'debug')
+  
+  # if osp.exists(save_dir):
+  #   os.mkdir(save_dir)
+  
+  img_path = osp.join(work_dir_path, ('photos/' + img_name))
+  img_name = img_path.split('/')[-1].split('.')[0]
+  print(img_path, img_name)
+
+  img = Image.open(img_path).resize((30, 30))
+  ary = np.array(img)
+
+  # Split the three channels
+  r,g,b = np.split(ary,3,axis=2)
+  r=r.reshape(-1)
+  g=r.reshape(-1)
+  b=r.reshape(-1)
+
+  # Standard RGB to grayscale 
+  bitmap = list(map(lambda x: 0.299 * x[0] + 0.587 * x[1] + 0.114 * x[2], zip(r,g,b)))
+  bitmap = np.array(bitmap).reshape([ary.shape[0], ary.shape[1]])
+  # bitmap = np.dot((bitmap > 128).astype(float),255)
+  # bitmap = np.dot((bitmap < 200).astype(float), 0)
+  bmp_z_idx = np.argwhere(bitmap < 200)
+  # print(bmp_z_idx)
+
+  # Save as img
+  im = Image.fromarray(bitmap.astype(np.uint8))
+  im.save(osp.join(save_dir, (img_name + '.bmp')))
+  
+  img.save(osp.join(save_dir, (img_name + '_resized.bmp')))
+  
+  return bmp_z_idx.tolist()
 
 def send_game_req(fout, board:np.ndarray, length, width, max_len):
   '''
@@ -68,6 +109,9 @@ def main():
                       help=f'Output trace file, defaults to "{default_trace_fout}"')
   args = parser.parse_args()
   
+  # MOD
+  img_name = 'bigbf.png'
+  
   print(f'Clearing any previous output in "{output_dir}"...')
   # Create output directory for testbench .data files
   try: shutil.rmtree(output_dir)
@@ -95,7 +139,13 @@ def main():
       fout.write(f'########## Game {idx+1} ##########\n')
       # Generate the initial board
       board = np.zeros((width, width), dtype=np.uint8)
-      alive_list = game['init_alive']
+      
+      ## MOD: 
+      # print(game['init_alive'])
+      print(type(game['init_alive']))
+      alive_list = get_bmp_zero_idxs(img_name)
+      print(type(alive_list))
+      ###
       if game['origin'] == 'center':
         for ii, p in enumerate(alive_list): alive_list[ii] = [p[0]+(width//2), p[1]+(width//2)]
       for pt in alive_list: board[pt[0]][pt[1]] = 1
