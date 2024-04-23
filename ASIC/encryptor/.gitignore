@@ -1,0 +1,11 @@
+*/build/*
+*/verdiLog/*
+*/out/*
+*/__pycache__/*
+*/*/__pycache__/*
+*/pipeline/*
+hammer.log
+output.json
+novas.conf
+*.swp
+novas.rc

@@ -39,10 +39,12 @@ int main(int argc, char *argv[]) {
         NEW_BMP.data = transform_color(BMP);    //transform the color data from RGB to gray scale
     }
     
-    // Resize to 250x250
-    NEW_BMP.data = resize(NEW_BMP, 250, 250);
-    NEW_BMP.head.BMPbitmap_width = 250;
-    NEW_BMP.head.BMPbitmap_height = 250;
+    // Resize
+    int width = 30;
+    int height = 30;
+    NEW_BMP.data = resize(NEW_BMP, width, height);
+    NEW_BMP.head.BMPbitmap_width = width;
+    NEW_BMP.head.BMPbitmap_height = height;
     write_gray_BMP(NEW_BMP, resized);        //write the information to the resized_img.bmp
 
     clock_t start, end;
