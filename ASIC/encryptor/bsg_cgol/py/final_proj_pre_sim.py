@@ -17,7 +17,7 @@ default_trace_fout = 'v/bsg_trace_master_0.tr' # Default output file
 
 # PARAMS to UPDATE
 work_dir_path = '/homes/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption'
-py_dir_path = osp.join(work_dir_path, 'ASIC/image_utils/image_io/py')
+py_dir_path = osp.join(work_dir_path, 'ASIC/encryptor/bsg_cgol/py')
 
 def get_bmp_zero_idxs(img_name):
   save_dir = osp.join(py_dir_path, 'debug')
@@ -33,18 +33,22 @@ def get_bmp_zero_idxs(img_name):
   ary = np.array(img)
 
   # Split the three channels
-  r,g,b = np.split(ary,3,axis=2)
-  r=r.reshape(-1)
-  g=r.reshape(-1)
-  b=r.reshape(-1)
+  if len(ary.shape) == 3:
+    r,g,b = np.split(ary,3,axis=2)
+    r=r.reshape(-1)
+    g=r.reshape(-1)
+    b=r.reshape(-1)
 
-  # Standard RGB to grayscale 
-  bitmap = list(map(lambda x: 0.299 * x[0] + 0.587 * x[1] + 0.114 * x[2], zip(r,g,b)))
-  bitmap = np.array(bitmap).reshape([ary.shape[0], ary.shape[1]])
-  # bitmap = np.dot((bitmap > 128).astype(float),255)
-  # bitmap = np.dot((bitmap < 200).astype(float), 0)
+    # Standard RGB to grayscale 
+    bitmap = list(map(lambda x: 0.299 * x[0] + 0.587 * x[1] + 0.114 * x[2], zip(r,g,b)))
+    bitmap = np.array(bitmap).reshape([ary.shape[0], ary.shape[1]])
+
+  else:
+    bitmap = ary
+  
+  # switch s, y order
   bmp_z_idx = np.argwhere(bitmap < 200)
-  print(bmp_z_idx.shape)
+  bmp_z_idx = np.roll(bmp_z_idx, 1, axis=1)
 
   # Save as img
   im = Image.fromarray(bitmap.astype(np.uint8))
@@ -100,6 +104,13 @@ def add_image_to_list(list, board, disp):
   list.append(cgol.board_to_img2(board, disp['pixel_size'],
                                         a=disp['alive_color'],
                                         d=disp['dead_color']))
+  
+def add_images_to_list(list, boards, disp):
+  for board in boards:
+    # Add a the next image to a list of images
+    list.append(cgol.board_to_img2(board, disp['pixel_size'],
+                                          a=disp['alive_color'],
+                                          d=disp['dead_color']))
 
 def main():
   parser = ArgumentParser()
@@ -110,7 +121,7 @@ def main():
   args = parser.parse_args()
   
   # MOD
-  img_name = 'bigbf.png'
+  img_name = 'bigbf.png' #num2.png
   
   print(f'Clearing any previous output in "{output_dir}"...')
   # Create output directory for testbench .data files
@@ -141,20 +152,53 @@ def main():
       board = np.zeros((width, width), dtype=np.uint8)
       
       ## MOD: 
-      # print(game['init_alive'])
-      print(type(game['init_alive']))
       alive_list = get_bmp_zero_idxs(img_name)
-      print(type(alive_list))
+      
       ###
       if game['origin'] == 'center':
         for ii, p in enumerate(alive_list): alive_list[ii] = [p[0]+(width//2), p[1]+(width//2)]
       for pt in alive_list: board[pt[0]][pt[1]] = 1
       board = board.transpose()
 
-      expected_fout = f'game_{idx+1}_{width}x{width}_{game["length"]}.gif'
+      # expected_fout = f'game_{idx+1}_{width}x{width}_{game["length"]}.gif'
+      fname = img_name.split('.')[0]
+      expected_fout = f'{fname}.gif'
+
+      # MOD
+      # Generate the trace for this game: only check the last frame
+      if game["checks"] == "key":
+        send_game_req(fout, board, game['length'], width, max_len) # Send initial data
+        print(f'Generating expected results for KEY version ...')
+        
+        # Simulate Game of Life
+        encrypt_imgs = []   # Storing each frame of Encryption
+        decrypt_imgs = []
+        with tqdm(range(game['length']), disable=False) as tq:
+          # Perform Encryption, saving each frame into gif
+          add_image_to_list(encrypt_imgs, board, cfg["display"])  # Add initial frame to gif
+          for i in tq:
+            board = cgol.ArnoldCatEncryption(board, 1)
+            add_image_to_list(encrypt_imgs, board, cfg["display"])
+          
+          # Perform Decryption, saving each frame into gif
+          add_image_to_list(decrypt_imgs, board, cfg["display"])  # Add initial frame to gif
+          for i in tq:
+            board = cgol.ArnoldCatDecryption(board, 1)
+            add_image_to_list(decrypt_imgs, board, cfg["display"])
+
+          # Record stats
+          print(tq.format_dict)
+          cgol_iterations += tq.format_dict['total']
+          cgol_elapsed_time += tq.format_dict['elapsed']
+        
+        # Save game as a GIF
+        cgol.save_gif(encrypt_imgs, os.path.join(output_dir, 'encrypting.gif'), frame_dur=cfg['display']['frame_dur_ms'])
+        cgol.save_gif(decrypt_imgs, os.path.join(output_dir, 'decrypting.gif'), frame_dur=cfg['display']['frame_dur_ms'])
+        send_game_check(fout, board, width) # Send output check
+
 
       # Generate the trace for this game: only check the last frame
-      if game["checks"] == "last":
+      elif game["checks"] == "last":
         send_game_req(fout, board, game['length'], width, max_len) # Send initial data
         print(f'Generating expected result "{expected_fout}" ...')
         images = []
@@ -164,14 +208,17 @@ def main():
             add_image_to_list(images, board, cfg["display"])
 
             # board = cgol.cgol_iter3(board)
-            board = cgol.ArnoldCatEncryption(board)
-            add_image_to_list(images, board, cfg["display"])
-            board = cgol.ArnoldCatDecryption(board)
+            board, interm_en = cgol.ArnoldCatEncryption(board)
+            # add_image_to_list(images, board, cfg["display"])
+            add_images_to_list(images, interm_en, cfg["display"])
+            board, interm_de = cgol.ArnoldCatDecryption(board)
+            add_images_to_list(images, interm_de, cfg["display"])
 
           # Record stats
           cgol_iterations += tq.format_dict['total']
           cgol_elapsed_time += tq.format_dict['elapsed']
         add_image_to_list(images, board, cfg["display"]) # Add last frame
+        print(f'\n\nLength of Images is: {len(images)}\n\n')
         # Save game as a GIF
         cgol.save_gif(images, os.path.join(output_dir, expected_fout), frame_dur=cfg['display']['frame_dur_ms'])
         send_game_check(fout, board, width) # Send output check

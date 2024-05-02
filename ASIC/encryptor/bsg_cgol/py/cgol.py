@@ -88,10 +88,12 @@ def ArnoldCatEncryption(arr: np.ndarray, key=20) -> np.ndarray:
     X = arr.shape[0]
     Y = arr.shape[1]
     arr_next = arr.copy()
-    
+    # interm = []
     for i in range(0,key):
         arr_next = ArnoldCatTransform(arr_next)
+        # interm.append(arr_next)
     return arr_next
+    # return arr_next, interm
 
 def ArnoldCatDecryption(arr: np.ndarray, key=20) -> np.ndarray:
     X = arr.shape[0]
@@ -108,9 +110,13 @@ def ArnoldCatDecryption(arr: np.ndarray, key=20) -> np.ndarray:
         decrypt_it = 2*dimension
     else:
         decrypt_it = int(12*dimension/7)
+    
+    # interm = []
     for i in range(key,decrypt_it):
         arr_next = ArnoldCatTransform(arr_next)
+        # interm.append(arr_next)
     return arr_next
+    # return arr_next, interm
 
 def cgol_iter3(arr: np.ndarray) -> np.ndarray:    
     # Perform 'num-neighbors' convolution
@@ -145,7 +151,6 @@ def board_to_img2(arr: np.ndarray, px_size: int, a:tuple=(255,255,255), d:tuple=
     # For each channel, set alive or dead value based on arr_rep
     for c in (0,1,2): arr_img[:, :, c] = arr_rep*(a[c]-d[c]) + d[c]
     im = Image.fromarray(arr_img)
-    # print('done')
     return im
 
 def save_gif(images: list, fname: str, frame_dur:int=50) -> None:
