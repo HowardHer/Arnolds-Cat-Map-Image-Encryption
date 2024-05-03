@@ -172,19 +172,19 @@ def main():
         
         # Simulate Game of Life
         encrypt_imgs = []   # Storing each frame of Encryption
-        decrypt_imgs = []
+        # decrypt_imgs = []
         with tqdm(range(game['length']), disable=False) as tq:
           # Perform Encryption, saving each frame into gif
           add_image_to_list(encrypt_imgs, board, cfg["display"])  # Add initial frame to gif
           for i in tq:
-            board = cgol.ArnoldCatEncryption(board, 1)
+            board = cgol.ArnoldCatTransform(board)
             add_image_to_list(encrypt_imgs, board, cfg["display"])
           
-          # Perform Decryption, saving each frame into gif
-          add_image_to_list(decrypt_imgs, board, cfg["display"])  # Add initial frame to gif
-          for i in tq:
-            board = cgol.ArnoldCatDecryption(board, 1)
-            add_image_to_list(decrypt_imgs, board, cfg["display"])
+          # # Perform Decryption, saving each frame into gif
+          # add_image_to_list(decrypt_imgs, board, cfg["display"])  # Add initial frame to gif
+          # for i in tq:
+          #   board = cgol.ArnoldCatDecryption(board, 1)
+          #   add_image_to_list(decrypt_imgs, board, cfg["display"])
 
           # Record stats
           print(tq.format_dict)
@@ -193,7 +193,7 @@ def main():
         
         # Save game as a GIF
         cgol.save_gif(encrypt_imgs, os.path.join(output_dir, 'encrypting.gif'), frame_dur=cfg['display']['frame_dur_ms'])
-        cgol.save_gif(decrypt_imgs, os.path.join(output_dir, 'decrypting.gif'), frame_dur=cfg['display']['frame_dur_ms'])
+        # cgol.save_gif(decrypt_imgs, os.path.join(output_dir, 'decrypting.gif'), frame_dur=cfg['display']['frame_dur_ms'])
         send_game_check(fout, board, width) # Send output check
 
 
