@@ -16,7 +16,8 @@ output_dir = 'out' # GIFs are written here
 default_trace_fout = 'v/bsg_trace_master_0.tr' # Default output file
 
 # PARAMS to UPDATE
-work_dir_path = '/homes/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption'
+set_user_path = 'homes/' + os.getlogin()
+work_dir_path = osp.join(set_user_path, 'ee526/Arnolds-Cat-Map-Image-Encryption')
 py_dir_path = osp.join(work_dir_path, 'ASIC/encryptor/bsg_cgol/py')
 
 def get_bmp_zero_idxs(img_name):
