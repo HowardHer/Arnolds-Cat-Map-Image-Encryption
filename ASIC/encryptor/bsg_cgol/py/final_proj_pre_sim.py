@@ -188,7 +188,6 @@ def main():
           #   add_image_to_list(decrypt_imgs, board, cfg["display"])
 
           # Record stats
-          print(tq.format_dict)
           cgol_iterations += tq.format_dict['total']
           cgol_elapsed_time += tq.format_dict['elapsed']
         

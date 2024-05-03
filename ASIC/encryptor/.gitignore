@@ -9,3 +9,4 @@ output.json
 novas.conf
 *.swp
 novas.rc
+*/py/debug/*
