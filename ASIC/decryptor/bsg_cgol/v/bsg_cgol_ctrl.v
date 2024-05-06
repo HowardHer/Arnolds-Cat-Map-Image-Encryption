@@ -47,25 +47,25 @@ module bsg_cgol_ctrl #(
   logic [32-1:0] log5;
   logic [32-1:0] log5_div6;
 
-  log_base5 #(
+  log_exp_base5 #(
     .board_width_p(board_width_p)
   ) log5_by2 (
     .val( (board_width_p / 2) ), 
-    .log5( log5_div2 )
+    .out( log5_div2 )
   );
 
-  log_base5 #(
+  log_exp_base5 #(
     .board_width_p(board_width_p)
   ) log5_by1 (
     .val( board_width_p ), 
-    .log5( log5 )
+    .out( log5 )
   );
 
-  log_base5 #(
+  log_exp_base5 #(
     .board_width_p(board_width_p)
   ) log5_by6 (
     .val( (board_width_p / 6) ), 
-    .log5( log5_div6 )
+    .out( log5_div6 )
   );
 
   always_comb begin
@@ -79,11 +79,11 @@ module bsg_cgol_ctrl #(
     
     // ELSE find the number of times to decrypt img
     else if (ready_o & v_i) begin
-      if ((board_width_p % 2 == 0) && ((5 ** log5_div2) == (board_width_p >> 1))) begin
+      if ((board_width_p % 2 == 0) && (log5_div2 == (board_width_p >> 1))) begin
         frames_n = 3 * board_width_p - frames_i;
-      end else if ((5 ** log5) == (board_width_p)) begin
+      end else if (log5 == (board_width_p)) begin
         frames_n = 2 * board_width_p - frames_i;
-      end else if ((board_width_p % 6 == 0) && ((5 ** log5_div6) == (board_width_p / 6))) begin
+      end else if ((board_width_p % 6 == 0) && (log5_div6 == (board_width_p / 6))) begin
         frames_n = 2 * board_width_p - frames_i;
       end else begin
         frames_n = ((12 * board_width_p) / 7) - frames_i;
@@ -120,29 +120,57 @@ module bsg_cgol_ctrl #(
 
 endmodule
 
-// log_base5 log5_dim2 (.val(val), .log5())
-module log_base5 #(
+// Log base 5 submodule
+module log_exp_base5 #(
     parameter `BSG_INV_PARAM(board_width_p)
    ,localparam tmp_width_p = 32
 ) (
   input [tmp_width_p-1:0] val, // Assume for now greatest size is 256
-  output logic [tmp_width_p-1:0] log5
+  output logic [tmp_width_p-1:0] out
 );
   logic [tmp_width_p-1:0] val_copy;
   logic [5:0] i;
+  logic [tmp_width_p-1:0] j;
+  logic [tmp_width_p-1:0] log5;
   
   always_comb begin
     log5 = 0;
+    out = 1;
     val_copy = val;
 
     for (i = 0; i < tmp_width_p; i = i + 1) begin
       if (val_copy >= 5) begin
         val_copy = val_copy / 5;
-        log5 = log5 + 1;
+        // log5 = log5 + 1;
+        out = out * 5;
       end else begin
         break;
       end
     end
   end
 
+  // always_comb begin
+  //   out = 1;
+  //   for (j = 0; j < log5; j = j + 1) begin
+  //     out = out * 5;
+  //   end
+  // end
+
 endmodule
+
+// // Exponent base 5 submodule
+// module exp_base5 #(
+//     parameter `BSG_INV_PARAM(board_width_p)
+//    ,localparam tmp_width_p = 32
+// ) (
+//   input [tmp_width_p-1:0] val, // Assume for now greatest size is 256
+//   output logic [tmp_width_p-1:0] exp5
+// );
+//   always_comb begin
+//     exp5 = 5;
+//     for (i = 0; i < val; i = i + 1) begin
+//       exp5 = exp5 * 5;
+//     end
+//   end
+
+// endmodule
