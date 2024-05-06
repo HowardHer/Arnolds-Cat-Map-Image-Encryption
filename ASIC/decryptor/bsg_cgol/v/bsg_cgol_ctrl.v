@@ -38,34 +38,30 @@ module bsg_cgol_ctrl #(
 
   logic [game_len_width_lp-1:0] frames_n, frames_r;
 
-  // assign frames_n = (ready_o & v_i) ? frames_i : 
-  //                   (state_r == eRUN) ? frames_r - 1 : frames_r;
-
-
   // Determine how many times to run decryption 
-  logic [32-1:0] log5_div2; // Assume for now greatest size is 256
-  logic [32-1:0] log5;
-  logic [32-1:0] log5_div6;
+  logic [31:0] log5_div2;
+  logic [31:0] log5;
+  logic [31:0] log5_div6;
 
   log_exp_base5 #(
     .board_width_p(board_width_p)
   ) log5_by2 (
     .val( (board_width_p / 2) ), 
-    .out( log5_div2 )
+    .out( log5_div2 ) // 5 ** (log5_div2)
   );
 
   log_exp_base5 #(
     .board_width_p(board_width_p)
   ) log5_by1 (
     .val( board_width_p ), 
-    .out( log5 )
+    .out( log5 ) // 5 ** (log5)
   );
 
   log_exp_base5 #(
     .board_width_p(board_width_p)
   ) log5_by6 (
     .val( (board_width_p / 6) ), 
-    .out( log5_div6 )
+    .out( log5_div6 ) 
   );
 
   always_comb begin
@@ -120,7 +116,7 @@ module bsg_cgol_ctrl #(
 
 endmodule
 
-// Log base 5 submodule
+// Log base 5 submodule & calculate 5 ** log5 because (**) is not synthesizable
 module log_exp_base5 #(
     parameter `BSG_INV_PARAM(board_width_p)
    ,localparam tmp_width_p = 32
@@ -149,28 +145,4 @@ module log_exp_base5 #(
     end
   end
 
-  // always_comb begin
-  //   out = 1;
-  //   for (j = 0; j < log5; j = j + 1) begin
-  //     out = out * 5;
-  //   end
-  // end
-
 endmodule
-
-// // Exponent base 5 submodule
-// module exp_base5 #(
-//     parameter `BSG_INV_PARAM(board_width_p)
-//    ,localparam tmp_width_p = 32
-// ) (
-//   input [tmp_width_p-1:0] val, // Assume for now greatest size is 256
-//   output logic [tmp_width_p-1:0] exp5
-// );
-//   always_comb begin
-//     exp5 = 5;
-//     for (i = 0; i < val; i = i + 1) begin
-//       exp5 = exp5 * 5;
-//     end
-//   end
-
-// endmodule
