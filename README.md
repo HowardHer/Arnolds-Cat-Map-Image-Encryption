@@ -8,9 +8,10 @@ Most notably, the decryption of these encrypted images requires large computatio
 
 
 
-## Contents
-We have implemented both Encryption and Decryption algorithms for Arnold's Cat Map using Software (Python, C) and Hardware (Verilog RTL). We have provided all the codes we have used to perform the software vs. hardware performance improvement.
+## Python, C, Verilog RTL Implementations
+We have implemented both Encryption and Decryption algorithms for Arnold's Cat Map using Software ([Python](Python_Code), [C](C_Code)) and Hardware ([Verilog RTL](ASIC)). We provide all the codes used to compare the performance improvement between software and hardware.
 
+We have also included some [basic images](photos) used in our testing, debugging, and demos.
 
 
 ## Getting Started
@@ -28,7 +29,7 @@ git submodule update --init --recursive
 
 
 
-## Install Python Dependences
+## Install Python-Dependences
 
 Install following dependencies needed for [python-based testbench](#ASIC/encryptor/bsg_acm/py/final_proj_pre_sim.py).
 ```
@@ -72,5 +73,5 @@ _More commands can be found in the [hammer-cad repository](https://github.com/bs
 
 ## References Consulted
 
-- Encryptor and Decryptor template that includes python testbench frameworks leveraging trace replay: [ee478-designs-project](https://github.com/bsg-external/ee478-designs-project)
+- Encryptor and Decryptor template that includes python testbench frameworks leveraging trace replay: [ee478-designs-project](https://github.com/bsg-external/ee478-designs-project). The License for this template is included within each copy of module [encryptor](ASIC/encryptor) and [decryptor](ASIC/decryptor).
 - Submodule for VLSI design flow: [ee477-hammer-cad](https://github.com/bsg-external/ee477-hammer-cad)
