@@ -1,0 +1,1 @@
+set_load 0.005 [all_outputs]

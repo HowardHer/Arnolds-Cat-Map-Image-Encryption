@@ -28,7 +28,7 @@ module  bsg_test_node_client #(parameter ring_width_p="inv"
   if ( client_id_p == 0 ) begin
 
     bsg_cgol #(
-       .board_width_p(30)
+       .board_width_p(50)
       ,.max_game_length_p(1000)
       //  .board_width_p(3)
       // ,.max_game_length_p(1)

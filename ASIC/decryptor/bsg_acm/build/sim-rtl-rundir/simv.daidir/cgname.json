@@ -1,0 +1,152 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "bsg_fsb_pkg": [
+        "bsg_fsb_pkg",
+        "heqUD",
+        "module",
+        2
+    ],
+    "bsg_noc_pkg": [
+        "bsg_noc_pkg",
+        "QQcYw",
+        "module",
+        3
+    ],
+    "bsg_mesh_router_pkg": [
+        "bsg_mesh_router_pkg",
+        "Qexvd",
+        "module",
+        4
+    ],
+    "bsg_wormhole_router_pkg": [
+        "bsg_wormhole_router_pkg",
+        "kMPhe",
+        "module",
+        5
+    ],
+    "bsg_wormhole_router_0000": [
+        "bsg_wormhole_router_0000",
+        "eCZWw",
+        "module",
+        6
+    ],
+    "bsg_ready_and_link_async_to_wormhole_0000": [
+        "bsg_ready_and_link_async_to_wormhole_0000",
+        "ePZbr",
+        "module",
+        7
+    ],
+    "bsg_wormhole_router_decoder_dor_0000": [
+        "bsg_wormhole_router_decoder_dor_0000",
+        "z1Fc7",
+        "module",
+        8
+    ],
+    "bsg_wormhole_router_output_control_0000": [
+        "bsg_wormhole_router_output_control_0000",
+        "Dz8wf",
+        "module",
+        9
+    ],
+    "bsg_async_fifo_0000_0001": [
+        "bsg_async_fifo_0000_0001",
+        "ekni5",
+        "module",
+        10
+    ],
+    "bsg_flatten_2D_array_0000": [
+        "bsg_flatten_2D_array_0000",
+        "CPRZV",
+        "module",
+        11
+    ],
+    "bsg_make_2D_array_0000": [
+        "bsg_make_2D_array_0000",
+        "yFH9q",
+        "module",
+        12
+    ],
+    "bsg_two_fifo_0000": [
+        "bsg_two_fifo_0000",
+        "azt3E",
+        "module",
+        13
+    ],
+    "bsg_two_fifo_0000_0000": [
+        "bsg_two_fifo_0000_0000",
+        "k7DQk",
+        "module",
+        14
+    ],
+    "bsg_two_fifo_0000_0001": [
+        "bsg_two_fifo_0000_0001",
+        "mEuzS",
+        "module",
+        15
+    ],
+    "bsg_link_ddr_downstream_0000": [
+        "bsg_link_ddr_downstream_0000",
+        "M9TDU",
+        "module",
+        16
+    ],
+    "bsg_link_ddr_upstream_0000": [
+        "bsg_link_ddr_upstream_0000",
+        "dVIry",
+        "module",
+        17
+    ],
+    "bsg_gray_to_binary": [
+        "bsg_gray_to_binary",
+        "VtTLh",
+        "module",
+        18
+    ],
+    "bsg_mux_one_hot_0001": [
+        "bsg_mux_one_hot_0001",
+        "wkuzB",
+        "module",
+        19
+    ],
+    "bsg_transpose_0000": [
+        "bsg_transpose_0000",
+        "k3qKs",
+        "module",
+        20
+    ],
+    "log_exp_base5": [
+        "log_exp_base5",
+        "vbrew",
+        "module",
+        25
+    ],
+    "bsg_nonsynth_clock_gen": [
+        "bsg_nonsynth_clock_gen",
+        "qYCc4",
+        "module",
+        21
+    ],
+    "bsg_nonsynth_clock_gen_0000": [
+        "bsg_nonsynth_clock_gen_0000",
+        "feqYh",
+        "module",
+        22
+    ],
+    "bsg_double_trouble_pcb": [
+        "bsg_double_trouble_pcb",
+        "m3yy6",
+        "module",
+        23
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        24
+    ]
+}

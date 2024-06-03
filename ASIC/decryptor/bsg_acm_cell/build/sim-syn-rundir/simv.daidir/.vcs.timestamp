@@ -1,0 +1,137 @@
+3        
+0 bsg_defines.v
+0 /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/etc/systemverilog/bsg_defines.v
+0 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf_c
+56
++define+FUNCTIONAL
++define+UNIT_DELAY
++incdir+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc
++itf+/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcsdp_lite.tab
++neg_tchk
++sdf=max:bsg_acm_cell:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf
++sdf=max:bsg_acm_cell:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf
++sdfverbose
++vcsd1
++vpi
++warn=noSDFCOM_ANICD
++warn=noSDFCOM_UHICD
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mdir=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvirsim.so /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/liberrorinf.so /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libsnpsmalloc.so /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvfs.so
+-Mout=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv
+-Msaverestoreobj=/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-kdb
+-negdelay
+-o /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv
+-override_timescale=1ps/1ps
+-picarchive
+-sverilog
+-top
+/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/bin/vcs1
+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv
+bsg_acm_cell_tb
+/home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab
+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v
+v/bsg_acm_cell_tb.v
+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v
+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_reset_gen.v
+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_node_trace_replay.v
+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/trace_rom.v
+build/tech-sky130-cache/primitives.v
+build/tech-sky130-cache/sky130_fd_sc_hd.v
+54
+XDG_SESSION_ID=1130
+XDG_RUNTIME_DIR=/run/user/823162
+XDG_DATA_DIRS=/homes/wuc29/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VSCODE_IPC_HOOK_CLI=/run/user/823162/vscode-ipc-fb209513-cf24-4309-9c1e-4b532f7a8d3f.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/823162/vscode-git-39d7bc38ee.sock
+VSCODE_GIT_ASKPASS_NODE=/home/wuc29/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/wuc29/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VMR_MODE_FLAG=64
+VERDI_HOME=/home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64
+TERM_PROGRAM_VERSION=1.89.1
+TERM_PROGRAM=vscode
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+SSL_CERT_DIR=/etc/pki/tls/certs
+SSH_CONNECTION=10.102.103.44 54376 10.159.224.49 22
+SSH_CLIENT=10.102.103.44 54376 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PYTHONPATH=:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/jsonschema:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/python-jsonschema-objects:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-tech:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi
+OVA_UUM=0
+MYPYPATH=:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/jsonschema:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/python-jsonschema-objects:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-tech:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi
+MSI2LMP_LIBRARY=/usr/share/lammps/frc_files
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+LAMMPS_POTENTIALS=/usr/share/lammps/potentials
+KRB5CCNAME=KEYRING:persistent:823162
+HISTCONTROL=ignoredups
+HAMMER_VLSI=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi
+HAMMER_HOME=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer
+GIT_ASKPASS=/home/wuc29/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass.sh
+FLEXLM_BORROWFILE=/homes/wuc29/.linux-lab-049.ece.uw.edu-borrow.txt
+CVS_RSH=ssh
+COLORTERM=truecolor
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+0
+12
+1717401907 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf
+1717402048 build/tech-sky130-cache/sky130_fd_sc_hd.v
+1717402048 build/tech-sky130-cache/primitives.v
+1717402048 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/trace_rom.v
+1713306611 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_node_trace_replay.v
+1713306614 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_reset_gen.v
+1713306614 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
+1713306613 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v
+1717401617 v/bsg_acm_cell_tb.v
+1717401907 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v
+1630405584 /home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab
+1590808341 /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcsdp_lite.tab
+4
+1590809634 /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvirsim.so
+1590809310 /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/liberrorinf.so
+1590809251 /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libsnpsmalloc.so
+1590809285 /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvfs.so
+1717402054 /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv.daidir
+-1 partitionlib

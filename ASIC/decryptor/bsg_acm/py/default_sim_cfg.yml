@@ -1,0 +1,25 @@
+# Configurations for image decryptions
+
+# This needs to match the parameters of the DUT instantiated in the testbench
+board: 
+  width: 50
+  max_length: 1000
+
+display:
+  # RGB color of 'dead' spaces in the display
+  dead_color:  [128, 128, 128] # grey
+  # RGB color of 'alive' spaces in the display
+  alive_color: [  0, 255,   0] # bright green
+  # size of the grid in the display
+  pixel_size: 10
+  # Durration (ms) of each frame in the display
+  frame_dur_ms: 250
+
+acts: [
+  {
+    encrypt_key: 20,
+    checks: "DECRYPT",
+    init_alive: [],
+    origin: "corner" # coorodinates origin set to upper-left corner of the board
+  },
+]

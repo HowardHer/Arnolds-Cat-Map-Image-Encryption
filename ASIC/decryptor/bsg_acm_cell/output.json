@@ -1,0 +1,15 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "v/bsg_acm_cell.v",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v"
+    ],
+    "synthesis.inputs.top_module": "bsg_acm_cell",
+    "synthesis.outputs.sdc": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf"
+}

@@ -20,7 +20,7 @@ set_user_path = '/homes/' + os.getlogin()
 work_dir_path = osp.join(set_user_path, 'ee526/Arnolds-Cat-Map-Image-Encryption')
 py_dir_path = osp.join(work_dir_path, 'ASIC/decryptor/bsg_cgol/py')
 
-def get_bmp_zero_idxs(img_name):
+def get_bmp_zero_idxs(img_name, side_len):
   save_dir = osp.join(py_dir_path, 'debug')
   
   if not osp.exists(save_dir):
@@ -30,7 +30,7 @@ def get_bmp_zero_idxs(img_name):
   img_name = img_path.split('/')[-1].split('.')[0]
   # print(img_path, img_name)
 
-  img = Image.open(img_path).resize((30, 30))
+  img = Image.open(img_path).resize((side_len, side_len))
   ary = np.array(img)
 
   # Split the three channels
@@ -153,7 +153,7 @@ def main():
       board = np.zeros((width, width), dtype=np.uint8)
       
       ## MOD: 
-      alive_list = get_bmp_zero_idxs(img_name)
+      alive_list = get_bmp_zero_idxs(img_name, cfg['board']['width'])
       
       ###
       if game['origin'] == 'center':
@@ -186,7 +186,10 @@ def main():
           # Perform Decryption, saving each frame into gif
           add_image_to_list(decrypt_imgs, board, cfg["display"])  # Add initial frame to gif
           # for i in tq:
-          board = cgol.ArnoldCatDecryption(board, game['length'])
+          board, boards = cgol.ArnoldCatDecryption(board, game['length'])
+          
+          for b in boards:
+            add_image_to_list(decrypt_imgs, b, cfg["display"])
           add_image_to_list(decrypt_imgs, board, cfg["display"])
 
           send_game_check(fout, board, width) # Send output check

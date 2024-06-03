@@ -1,0 +1,119 @@
+{
+    "bsg_root": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl",
+    "vlsi.core.local_tool_path": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad",
+    "vlsi.core.max_threads": 8,
+    "vlsi.core.build_system": "make",
+    "vlsi.core.technology": "sky130",
+    "vlsi.core.node": 130,
+    "vlsi.core.sram_generator_tool": "fakeram",
+    "vlsi.core.synthesis_tool": "genus",
+    "vlsi.core.par_tool": "innovus",
+    "vlsi.core.sim_tool": "vcs",
+    "vlsi.core.drc_tool": "magic",
+    "vlsi.core.lvs_tool": "netgen",
+    "vlsi.core.formal_tool": "conformal",
+    "vlsi.core.timing_tool": "tempus",
+    "sim.vcs.disable_fgp": true,
+    "sim.vcs.disable_force_regs": true,
+    "synthesis.genus.write_sdf_args": [
+        "-nosplit_timing_check",
+        "-timescale ns"
+    ],
+    "par.innovus.design_flow_effort": "extreme",
+    "sram_generator.fakeram.pinPitch_nm": 700,
+    "sim.inputs.top_module": "UNSPECIFIED",
+    "sim.inputs.timescale": "1ns/1ps",
+    "sim.inputs.timing_annotated": true,
+    "sim.inputs.options": [
+        "+vcs+vcdpluson",
+        "+vcs+vcdplusmemon",
+        "+vcs+vcdplusautoflushon",
+        "-sverilog",
+        "-debug_pp",
+        "+define+FUNCTIONAL",
+        "+define+UNIT_DELAY",
+        "+warn=noSDFCOM_UHICD",
+        "+warn=noSDFCOM_ANICD"
+    ],
+    "vlsi.inputs.clocks": [
+        {
+            "name": "DEFAULT_CLOCK",
+            "period": "0ns"
+        }
+    ],
+    "vlsi.inputs.sram_parameters": [],
+    "vlsi.inputs.power_spec_mode": "auto",
+    "vlsi.inputs.power_spec_type": "cpf",
+    "vlsi.inputs.default_output_load": 0.005,
+    "par.power_straps_mode": "generate",
+    "par.generate_power_straps_method": "by_tracks",
+    "par.blockage_spacing": 3.0,
+    "par.blockage_spacing_top_layer": "met4",
+    "par.generate_power_straps_options.by_tracks.strap_layers": [
+        "met4",
+        "met5"
+    ],
+    "par.generate_power_straps_options.by_tracks.pin_layers": [
+        "met5"
+    ],
+    "par.generate_power_straps_options.by_tracks.blockage_spacing_met2": 4.0,
+    "par.generate_power_straps_options.by_tracks.track_width": 6,
+    "par.generate_power_straps_options.by_tracks.track_width_met5": 2,
+    "par.generate_power_straps_options.by_tracks.track_spacing": 1,
+    "par.generate_power_straps_options.by_tracks.track_start": 10,
+    "par.generate_power_straps_options.by_tracks.track_start_met5": 1,
+    "par.generate_power_straps_options.by_tracks.power_utilization": 0.1,
+    "par.generate_power_straps_options.by_tracks.power_utilization_met4": 0.3,
+    "par.generate_power_straps_options.by_tracks.power_utilization_met5": 0.5,
+    "vlsi.inputs.placement_constraints": [
+        {
+            "path": "TOP",
+            "type": "toplevel",
+            "width": 200,
+            "height": 200,
+            "x": 0,
+            "y": 0,
+            "margins": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        }
+    ],
+    "vlsi.inputs.pin_mode": "generated",
+    "vlsi.inputs.pin.generate_mode": "semi_auto",
+    "vlsi.inputs.pin.assignments": [
+        {
+            "pins": "*",
+            "layers": [
+                "met2",
+                "met4"
+            ],
+            "side": "bottom"
+        }
+    ],
+    "vlsi.inputs.custom_sdc_files": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/cfg/constraints.tcl"
+    ],
+    "synthesis.inputs.top_module": "bsg_acm_cell",
+    "sim.inputs.tb_name": "bsg_acm_cell_tb",
+    "synthesis.inputs.preserve_modules": [],
+    "vlsi.inputs.custom_sdc_constraints": [],
+    "synthesis.inputs.input_files": [
+        "v/bsg_acm_cell.v",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v"
+    ],
+    "sim.inputs.input_files": [
+        "v/bsg_acm_cell.v",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v"
+    ],
+    "vlsi.technology.extra_libraries": [],
+    "synthesis.outputs.output_files": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v"
+    ],
+    "synthesis.outputs.sdc": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf"
+}

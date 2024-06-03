@@ -1,0 +1,7 @@
+Command Line: /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/bin/elabcom -logdir /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-rtl-rundir/simv.daidir/elabcomLog -simvdaidir /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-rtl-rundir/simv.daidir -lib /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-rtl-rundir/simv.daidir/work -saveLevel -elab /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-rtl-rundir/simv.daidir/kdb -simflow -simdir /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-rtl-rundir/simv.daidir/kdb_libs -topfile /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-rtl-rundir/simv.daidir/.elabcomTopFile -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
+uname(Linux linux-lab-049.ece.uw.edu 3.10.0-1160.108.1.el7.x86_64 #1 SMP Thu Jan 25 16:17:31 UTC 2024 x86_64)
+[INFO] error/warning message 'C00380' has been suppressed.
+[INFO] error/warning message 'C00381' has been suppressed.
+[INFO] error/warning message 'C00388' has been suppressed.
+[INFO] error/warning message 'C00389' has been suppressed.
+au time 0.377609 0.036595 0.062875 delta 94277632 94277632 total 199049216 199049216

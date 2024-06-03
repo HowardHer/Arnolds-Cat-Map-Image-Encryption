@@ -1,0 +1,57 @@
+[<global>] Level.INFO: Loading hammer-vlsi libraries and reading settings
+[<global>] Level.INFO: Loading technology 'sky130'
+[tech] Level.ERROR: installs  does not exist
+[tech] Level.INFO: Modifying CDL netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.cdl
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.v
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm/build/tech-sky130-cache/primitives.v
+[tech] Level.INFO: Modifying Technology LEF: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[<global>] Level.INFO: Loading hammer-vlsi libraries and reading settings
+[<global>] Level.INFO: Loading technology 'sky130'
+[tech] Level.ERROR: installs  does not exist
+[tech] Level.INFO: Modifying CDL netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.cdl
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.v
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm/build/tech-sky130-cache/primitives.v
+[tech] Level.INFO: Modifying Technology LEF: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[<global>] Level.INFO: Loading hammer-vlsi libraries and reading settings
+[<global>] Level.INFO: Loading technology 'sky130'
+[tech] Level.ERROR: installs  does not exist
+[tech] Level.INFO: Modifying CDL netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.cdl
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.v
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/primitives.v
+[tech] Level.INFO: Modifying Technology LEF: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[<global>] Level.INFO: Loading hammer-vlsi libraries and reading settings
+[<global>] Level.INFO: Loading technology 'sky130'
+[tech] Level.ERROR: installs  does not exist
+[tech] Level.INFO: Modifying CDL netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.cdl
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.v
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/primitives.v
+[tech] Level.INFO: Modifying Technology LEF: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[<global>] Level.INFO: Loading hammer-vlsi libraries and reading settings
+[<global>] Level.INFO: Loading technology 'sky130'
+[tech] Level.ERROR: installs  does not exist
+[tech] Level.INFO: Modifying CDL netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.cdl
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.v
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/primitives.v
+[tech] Level.INFO: Modifying Technology LEF: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[<global>] Level.INFO: Loading hammer-vlsi libraries and reading settings
+[<global>] Level.INFO: Loading technology 'sky130'
+[tech] Level.ERROR: installs  does not exist
+[tech] Level.INFO: Modifying CDL netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.cdl
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.v
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/primitives.v
+[tech] Level.INFO: Modifying Technology LEF: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[<global>] Level.INFO: Loading hammer-vlsi libraries and reading settings
+[<global>] Level.INFO: Loading technology 'sky130'
+[tech] Level.ERROR: installs  does not exist
+[tech] Level.INFO: Modifying CDL netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.cdl
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd.v
+[tech] Level.INFO: Modifying Verilog netlist: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/primitives.v
+[tech] Level.INFO: Modifying Technology LEF: /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[<global>] Level.WARNING: No SRAM parameters specified, no SRAMs will be generated.
+[<global>] Level.INFO: Starting SRAM Generator with tool 'fakeram'
+[sram_generator] Level.DEBUG: Running sub-step 'run_fakeram_generator'
+[sram_generator] Level.WARNING: No valid configs, no SRAMs were generated
+[sram_generator] Level.DEBUG: Running sub-step 'generate_all_gds'
+[sram_generator] Level.INFO: SRAM GDS generation disabled (only LEF view available)
+[sram_generator] Level.DEBUG: Running sub-step 'register_macros'
+[sram_generator] Level.DEBUG: Running sub-step 'fakeram_gen_macro_swaps'

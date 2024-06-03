@@ -113,12 +113,12 @@ def ArnoldCatDecryption(arr: np.ndarray, key=20) -> np.ndarray:
     
     print(f'The number of decryption iterations: {decrypt_it}')
     
-    # interm = []
+    interm = []
     for i in range(key,decrypt_it):
         arr_next = ArnoldCatTransform(arr_next)
-        # interm.append(arr_next)
-    return arr_next
-    # return arr_next, interm
+        interm.append(arr_next)
+    # return arr_next
+    return arr_next, interm
 
 def cgol_iter3(arr: np.ndarray) -> np.ndarray:    
     # Perform 'num-neighbors' convolution
