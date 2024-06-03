@@ -1,0 +1,5 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "vlsi.technology.extra_libraries": [],
+    "vlsi.technology.extra_libraries_meta": "append"
+}

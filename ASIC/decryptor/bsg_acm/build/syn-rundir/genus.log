@@ -1,0 +1,1575 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[08:54:33.233913] Configured Lic search path (20.02-s004): 27006@cadencels.s.uw.edu
+
+Version: 21.12-s068_1, built Fri Mar 04 06:12:46 PST 2022
+Options: -files /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/syn.tcl -no_gui 
+Date:    Mon Jun 03 08:54:33 2024
+Host:    linux-lab-049.ece.uw.edu (x86_64 w/Linux 3.10.0-1160.108.1.el7.x86_64) (8cores*8cpus*1physical cpu*Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz 12288KB) (16090180KB)
+PID:     29976
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+
+[08:54:33.372642] Periodic Lic check successful
+[08:54:33.372649] Feature usage summary:
+[08:54:33.372649] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (9 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/syn.tcl
+#@ Begin verbose source /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/syn.tcl
+@file(syn.tcl) 1: puts "set_db hdl_error_on_blackbox true" 
+set_db hdl_error_on_blackbox true
+@file(syn.tcl) 2: set_db hdl_error_on_blackbox true
+  Setting attribute of root '/': 'hdl_error_on_blackbox' = true
+@file(syn.tcl) 3: puts "set_db max_cpus_per_server 8" 
+set_db max_cpus_per_server 8
+@file(syn.tcl) 4: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(syn.tcl) 5: puts "set_db hdl_auto_sync_set_reset true" 
+set_db hdl_auto_sync_set_reset true
+@file(syn.tcl) 6: set_db hdl_auto_sync_set_reset true
+  Setting attribute of root '/': 'hdl_auto_sync_set_reset' = true
+@file(syn.tcl) 7: puts "set_db hdl_unconnected_value none" 
+set_db hdl_unconnected_value none
+@file(syn.tcl) 8: set_db hdl_unconnected_value none
+  Setting attribute of root '/': 'hdl_unconnected_value' = none
+@file(syn.tcl) 9: puts "read_mmmc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/mmmc.tcl" 
+read_mmmc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/mmmc.tcl
+@file(syn.tcl) 10: read_mmmc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/mmmc.tcl
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+Sourcing '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/mmmc.tcl' (Mon Jun 03 08:54:42 UTC 2024)...
+#@ Begin verbose source /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/mmmc.tcl
+@file(mmmc.tcl) 1: puts "create_constraint_mode -name my_constraint_mode -sdc_files [list /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/clock_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/pin_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/../../../ee477-hammer-cad/tcl/bsg_tag_timing.tcl /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/../../../ee477-hammer-cad/tcl/bsg_chip/bsg_chip_timing_constraint.tcl /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/constraints.tcl]" 
+create_constraint_mode -name my_constraint_mode -sdc_files /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/clock_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/pin_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/../../../ee477-hammer-cad/tcl/bsg_tag_timing.tcl /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/../../../ee477-hammer-cad/tcl/bsg_chip/bsg_chip_timing_constraint.tcl /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/constraints.tcl
+@file(mmmc.tcl) 2: create_constraint_mode -name my_constraint_mode -sdc_files [list /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/clock_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/pin_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/../../../ee477-hammer-cad/tcl/bsg_tag_timing.tcl /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/../../../ee477-hammer-cad/tcl/bsg_chip/bsg_chip_timing_constraint.tcl /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/constraints.tcl]
+@file(mmmc.tcl) 3: puts "create_library_set -name ss_100C_1v60.setup_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib]" 
+create_library_set -name ss_100C_1v60.setup_set -timing /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib
+@file(mmmc.tcl) 4: create_library_set -name ss_100C_1v60.setup_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib]
+@file(mmmc.tcl) 5: puts "create_timing_condition -name ss_100C_1v60.setup_cond -library_sets [list ss_100C_1v60.setup_set]" 
+create_timing_condition -name ss_100C_1v60.setup_cond -library_sets ss_100C_1v60.setup_set
+@file(mmmc.tcl) 6: create_timing_condition -name ss_100C_1v60.setup_cond -library_sets [list ss_100C_1v60.setup_set]
+@file(mmmc.tcl) 7: puts "create_rc_corner -name ss_100C_1v60.setup_rc -temperature 100.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl" 
+create_rc_corner -name ss_100C_1v60.setup_rc -temperature 100.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 8: create_rc_corner -name ss_100C_1v60.setup_rc -temperature 100.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 9: puts "create_delay_corner -name ss_100C_1v60.setup_delay -timing_condition ss_100C_1v60.setup_cond -rc_corner ss_100C_1v60.setup_rc" 
+create_delay_corner -name ss_100C_1v60.setup_delay -timing_condition ss_100C_1v60.setup_cond -rc_corner ss_100C_1v60.setup_rc
+@file(mmmc.tcl) 10: create_delay_corner -name ss_100C_1v60.setup_delay -timing_condition ss_100C_1v60.setup_cond -rc_corner ss_100C_1v60.setup_rc
+@file(mmmc.tcl) 11: puts "create_analysis_view -name ss_100C_1v60.setup_view -delay_corner ss_100C_1v60.setup_delay -constraint_mode my_constraint_mode" 
+create_analysis_view -name ss_100C_1v60.setup_view -delay_corner ss_100C_1v60.setup_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 12: create_analysis_view -name ss_100C_1v60.setup_view -delay_corner ss_100C_1v60.setup_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 13: puts "create_library_set -name ff_n40C_1v95.hold_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib]" 
+create_library_set -name ff_n40C_1v95.hold_set -timing /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib
+@file(mmmc.tcl) 14: create_library_set -name ff_n40C_1v95.hold_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib]
+@file(mmmc.tcl) 15: puts "create_timing_condition -name ff_n40C_1v95.hold_cond -library_sets [list ff_n40C_1v95.hold_set]" 
+create_timing_condition -name ff_n40C_1v95.hold_cond -library_sets ff_n40C_1v95.hold_set
+@file(mmmc.tcl) 16: create_timing_condition -name ff_n40C_1v95.hold_cond -library_sets [list ff_n40C_1v95.hold_set]
+@file(mmmc.tcl) 17: puts "create_rc_corner -name ff_n40C_1v95.hold_rc -temperature -40.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl" 
+create_rc_corner -name ff_n40C_1v95.hold_rc -temperature -40.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 18: create_rc_corner -name ff_n40C_1v95.hold_rc -temperature -40.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 19: puts "create_delay_corner -name ff_n40C_1v95.hold_delay -timing_condition ff_n40C_1v95.hold_cond -rc_corner ff_n40C_1v95.hold_rc" 
+create_delay_corner -name ff_n40C_1v95.hold_delay -timing_condition ff_n40C_1v95.hold_cond -rc_corner ff_n40C_1v95.hold_rc
+@file(mmmc.tcl) 20: create_delay_corner -name ff_n40C_1v95.hold_delay -timing_condition ff_n40C_1v95.hold_cond -rc_corner ff_n40C_1v95.hold_rc
+@file(mmmc.tcl) 21: puts "create_analysis_view -name ff_n40C_1v95.hold_view -delay_corner ff_n40C_1v95.hold_delay -constraint_mode my_constraint_mode" 
+create_analysis_view -name ff_n40C_1v95.hold_view -delay_corner ff_n40C_1v95.hold_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 22: create_analysis_view -name ff_n40C_1v95.hold_view -delay_corner ff_n40C_1v95.hold_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 23: puts "create_library_set -name tt_025C_1v80.extra_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib]" 
+create_library_set -name tt_025C_1v80.extra_set -timing /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+@file(mmmc.tcl) 24: create_library_set -name tt_025C_1v80.extra_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib]
+@file(mmmc.tcl) 25: puts "create_timing_condition -name tt_025C_1v80.extra_cond -library_sets [list tt_025C_1v80.extra_set]" 
+create_timing_condition -name tt_025C_1v80.extra_cond -library_sets tt_025C_1v80.extra_set
+@file(mmmc.tcl) 26: create_timing_condition -name tt_025C_1v80.extra_cond -library_sets [list tt_025C_1v80.extra_set]
+@file(mmmc.tcl) 27: puts "create_rc_corner -name tt_025C_1v80.extra_rc -temperature 25.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl" 
+create_rc_corner -name tt_025C_1v80.extra_rc -temperature 25.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 28: create_rc_corner -name tt_025C_1v80.extra_rc -temperature 25.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 29: puts "create_delay_corner -name tt_025C_1v80.extra_delay -timing_condition tt_025C_1v80.extra_cond -rc_corner tt_025C_1v80.extra_rc" 
+create_delay_corner -name tt_025C_1v80.extra_delay -timing_condition tt_025C_1v80.extra_cond -rc_corner tt_025C_1v80.extra_rc
+@file(mmmc.tcl) 30: create_delay_corner -name tt_025C_1v80.extra_delay -timing_condition tt_025C_1v80.extra_cond -rc_corner tt_025C_1v80.extra_rc
+@file(mmmc.tcl) 31: puts "create_analysis_view -name tt_025C_1v80.extra_view -delay_corner tt_025C_1v80.extra_delay -constraint_mode my_constraint_mode" 
+create_analysis_view -name tt_025C_1v80.extra_view -delay_corner tt_025C_1v80.extra_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 32: create_analysis_view -name tt_025C_1v80.extra_view -delay_corner tt_025C_1v80.extra_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 33: puts "set_analysis_view -setup { ss_100C_1v60.setup_view } -hold { ff_n40C_1v95.hold_view tt_025C_1v80.extra_view }" 
+set_analysis_view -setup { ss_100C_1v60.setup_view } -hold { ff_n40C_1v95.hold_view tt_025C_1v80.extra_view }
+@file(mmmc.tcl) 34: set_analysis_view -setup { ss_100C_1v60.setup_view } -hold { ff_n40C_1v95.hold_view tt_025C_1v80.extra_view }
+
+Threads Configured:3
+
+  Message Summary for Library sky130_fd_sc_hd__ss_100C_1v60.lib:
+  **************************************************************
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82160)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82294)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82428)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82705)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82839)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82973)
+  Missing pg_pin group in the library. [LBR-702]: 6
+  An unsupported construct was detected in this library. [LBR-40]: 12
+  **************************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.600000, 100.000000) in library 'sky130_fd_sc_hd__ss_100C_1v60.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_12' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_12' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__diode_2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__diode_2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_bleeder_1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_bleeder_1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_12' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_12' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_4' must have an output pin.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-9'.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is 'library_domain:ss_100C_1v60.setup_cond'.
+#@ End verbose source /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/mmmc.tcl
+@file(syn.tcl) 11: puts "read_physical -lef { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef }" 
+read_physical -lef { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef }
+@file(syn.tcl) 12: read_physical -lef { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef }
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR_R' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR_M' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR_MR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR_C' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR_R' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR_M' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR_MR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR_C' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR_R' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR_M' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR_MR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR_C' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR_R' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR_M' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR_MR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR_C' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-129'.
+Warning : Multiple ports are found on a pin without MUSTJOINALLPORTS in the pin property in the LEF file. [PHYS-2381]
+        : Multiple ports are found on pin 'X' on cell 'sky130_fd_sc_hd__probe_p_8' without MUSTJOINALLPORTS in the pin property.
+        : This means that only one port would be connected, which may not be the expected behavior. Should consider adding MUSTJOINALLPORTS property.
+Warning : Multiple ports are found on a pin without MUSTJOINALLPORTS in the pin property in the LEF file. [PHYS-2381]
+        : Multiple ports are found on pin 'X' on cell 'sky130_fd_sc_hd__probec_p_8' without MUSTJOINALLPORTS in the pin property.
+
+  According to lef_library, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'met2' and 'met5' is too large.
+        : Check the consistency of the parameters, and see if you can ignore this message or you're using different LEF file with wrong parameters.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.0285, 12.8) of 'RPERSQ' for layers 'met5' and 'li1' is too large.
+Warning : The value of the wire parameter is too big. [PHYS-13]
+        : The 'RPERSQ: 12.8' of layer 'li1' is much bigger than others.
+        : Check the consistency of the specified wire parameter.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'MINSPACING' for layers 'met2' and 'met5' is too large.
+  Library has 335 usable logic and 62 usable sequential lib-cells.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_ef_sc_hd__decap_12 cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_ef_sc_hd__fakediode_2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_ef_sc_hd__fill_8 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_ef_sc_hd__fill_12 cannot be found in library.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2o_1' is marked as GROUND in LEF file.
+        : Overriding lib value with LEF value. To use .lib as golden do: '::legacy::set_attribute use_power_ground_pin_from_lef false'.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2o_1' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2o_2' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2o_2' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2o_4' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2o_4' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2oi_1' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2oi_1' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2oi_2' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2oi_2' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2oi_4' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2oi_4' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a21bo_1' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a21bo_1' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a21bo_2' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a21bo_2' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a21bo_4' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a21bo_4' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a21boi_0' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a21boi_0' is marked as POWER in LEF file.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-128'.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__fill_1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__fill_2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__fill_4 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__fill_8 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tap_1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tap_2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tapvgnd2_1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tapvgnd_1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tapvpwrvgnd_1 cannot be found in library.
+@file(syn.tcl) 13: puts "read_hdl -sv { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/bsg_guts.vh /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_noc_links.vh /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_noc_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_overflow_set_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_concentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_unconcentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_set_down.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_array_concentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_ready_and_link_async_to_wormhole.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_decoder_dor.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_input_control.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_output_control.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_credit_counter.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_ptr_gray.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_launch_sync_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_sync_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_1_to_n_tagged.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_1_to_n_tagged_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_narrow.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel_in.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_narrowed.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_pseudo_large.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small_hardened.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small_unhardened.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1rw_large.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_tracker.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_flatten_2D_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_make_2D_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_one_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_parallel_in_serial_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_serial_in_parallel_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_1_to_n.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_fifo_to_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_n_to_1.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_sbox.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_scatter_gather.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_serial_in_parallel_out_full.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_two_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_front_side_bus_hop_in.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_front_side_bus_hop_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_murn_gateway.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_ddr_downstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_ddr_upstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_iddr_phy.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_oddr_phy.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_source_sync_downstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_source_sync_upstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1r1w.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_mask_write_byte.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_mask_write_byte_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_2r1w_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_2r1w_sync_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_banked_crossbar.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_adder_cin.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_and.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_arb_fixed.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_array_reverse.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_binary_plus_one_to_gray.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_buf.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_buf_ctrl.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_circular_ptr.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_clkbuf.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_clear_up.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_up_down.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_up_down_variable.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_crossbar_o_by_i.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_cycle_counter.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_decode.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_decode_with_v.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_reset.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_reset_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_encode_one_hot.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_gray_to_binary.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_idiv_iterative.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_idiv_iterative_controller.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_imul_iterative.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_mux.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_mux_one_hot.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_nor2.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_priority_encode.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_rotate_right.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_round_robin_arb.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_scan.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_thermometer_count.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_tiehi.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_tielo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_transpose.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_xnor.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router_buffered.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_stitch.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/bsg_guts.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopad_macros.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopad_mapping.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopads.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_pinout.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_test_node_client.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_ctrl.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_input_data_channel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_output_data_channel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_cell_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../bsg_acm_cell/v/bsg_acm_cell.v }" 
+read_hdl -sv { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/bsg_guts.vh /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_noc_links.vh /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_noc_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_overflow_set_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_concentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_unconcentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_set_down.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_array_concentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_ready_and_link_async_to_wormhole.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_decoder_dor.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_input_control.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_output_control.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_credit_counter.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_ptr_gray.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_launch_sync_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_sync_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_1_to_n_tagged.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_1_to_n_tagged_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_narrow.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel_in.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_narrowed.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_pseudo_large.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small_hardened.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small_unhardened.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1rw_large.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_tracker.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_flatten_2D_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_make_2D_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_one_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_parallel_in_serial_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_serial_in_parallel_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_1_to_n.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_fifo_to_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_n_to_1.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_sbox.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_scatter_gather.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_serial_in_parallel_out_full.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_two_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_front_side_bus_hop_in.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_front_side_bus_hop_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_murn_gateway.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_ddr_downstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_ddr_upstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_iddr_phy.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_oddr_phy.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_source_sync_downstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_source_sync_upstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1r1w.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_mask_write_byte.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_mask_write_byte_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_2r1w_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_2r1w_sync_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_banked_crossbar.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_adder_cin.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_and.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_arb_fixed.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_array_reverse.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_binary_plus_one_to_gray.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_buf.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_buf_ctrl.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_circular_ptr.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_clkbuf.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_clear_up.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_up_down.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_up_down_variable.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_crossbar_o_by_i.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_cycle_counter.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_decode.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_decode_with_v.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_reset.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_reset_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_encode_one_hot.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_gray_to_binary.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_idiv_iterative.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_idiv_iterative_controller.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_imul_iterative.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_mux.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_mux_one_hot.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_nor2.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_priority_encode.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_rotate_right.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_round_robin_arb.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_scan.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_thermometer_count.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_tiehi.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_tielo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_transpose.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_xnor.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router_buffered.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_stitch.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/bsg_guts.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopad_macros.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopad_mapping.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopads.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_pinout.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_test_node_client.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_ctrl.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_input_data_channel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_output_data_channel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_cell_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../bsg_acm_cell/v/bsg_acm_cell.v }
+@file(syn.tcl) 14: read_hdl -sv { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/bsg_guts.vh /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_noc_links.vh /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_noc_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_overflow_set_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_concentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_unconcentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_set_down.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_array_concentrate_static.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_pkg.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_ready_and_link_async_to_wormhole.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_decoder_dor.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_input_control.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_output_control.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_credit_counter.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_ptr_gray.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_launch_sync_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_sync_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_1_to_n_tagged.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_1_to_n_tagged_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_narrow.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel_in.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_narrowed.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_pseudo_large.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small_hardened.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small_unhardened.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1rw_large.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_tracker.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_flatten_2D_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_make_2D_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_one_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_parallel_in_serial_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_serial_in_parallel_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_1_to_n.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_fifo_to_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_round_robin_n_to_1.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_sbox.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_scatter_gather.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_serial_in_parallel_out_full.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_two_fifo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_front_side_bus_hop_in.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_front_side_bus_hop_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_murn_gateway.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_ddr_downstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_ddr_upstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_iddr_phy.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_oddr_phy.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_source_sync_downstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_link/bsg_link_source_sync_upstream.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1r1w.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_mask_write_byte.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_mask_write_byte_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_1rw_sync_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_2r1w_sync.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_2r1w_sync_synth.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_mem/bsg_mem_banked_crossbar.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_adder_cin.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_and.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_arb_fixed.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_array_reverse.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_binary_plus_one_to_gray.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_buf.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_buf_ctrl.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_circular_ptr.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_clkbuf.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_clear_up.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_up_down.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_counter_up_down_variable.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_crossbar_o_by_i.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_cycle_counter.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_decode.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_decode_with_v.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_reset.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_dff_reset_en.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_encode_one_hot.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_gray_to_binary.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_idiv_iterative.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_idiv_iterative_controller.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_imul_iterative.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_mux.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_mux_one_hot.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_nor2.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_priority_encode.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_priority_encode_one_hot_out.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_rotate_right.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_round_robin_arb.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_scan.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_thermometer_count.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_tiehi.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_tielo.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_transpose.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_xnor.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_router_buffered.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_mesh_stitch.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/bsg_guts.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopad_macros.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopad_mapping.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_iopads.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../common/v/packaging/bsg_pinout.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_test_node_client.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_ctrl.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_input_data_channel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_output_data_channel.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_cell_array.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/../bsg_acm_cell/v/bsg_acm_cell.v }
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_pkg.v' on line 1, column 24.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router.v' on line 1, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_ready_and_link_async_to_wormhole.v' on line 15, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_decoder_dor.v' on line 9, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_input_control.v' on line 1, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_noc/bsg_wormhole_router_output_control.v' on line 1, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_credit_counter.v' on line 60, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_fifo.v' on line 14, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_async_ptr_gray.v' on line 18, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_launch_sync_sync.v' on line 25, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_async/bsg_sync_sync.v' on line 11, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_1_to_n_tagged.v' on line 17, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_1_to_n_tagged_fifo.v' on line 14, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_narrow.v' on line 15, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel.v' on line 62, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel_in.v' on line 10, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_channel_tunnel_out.v' on line 10, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_narrowed.v' on line 9, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_pseudo_large.v' on line 105, column 24.
+`include "bsg_defines.v"
+                       |
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'bsg_defines.v' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_dataflow/bsg_fifo_1r1w_small.v' on line 20, column 24.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'VLOGPT-650'.
+// synthesis of (x+1) ^ ((x+1) >> 1). Synopsys has some
+                                                      |
+Warning : Unrecognized Synthesis pragma_name found in HDL. [VLOGPT-502]
+        : Pragma 'synthesis of (x+1) ^ ((x+1) >> 1). Synopsys has some' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_binary_plus_one_to_gray.v' on line 7, column 55.
+        : Synthesis pragmas are specially-formatted comments or attributes in the HDL that tell Genus how to synthesize the HDL.
+    `BSG_IO_IN_A(sdi,sclk,B,1,NONE);                                                          
+                                               |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 120, column 48.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 121, column 48.
+    `BSG_IO_IN_A(sdi,sclk,D,3,NONE);
+                                   |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 122, column 48.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 123, column 48.
+    `BSG_IO_IN_A(sdi,sclk_ex,D,3,NONE);
+                                      |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 125, column 54.
+    `BSG_IO_IN_A(sdi,sclk_ex,D,3,NONE);
+                                      |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 126, column 54.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 127, column 54.
+    assign sdi_sclk_ex_i_int[3] = p_sdi_sclk_ex_i[3];;
+                                                     |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 128, column 54.
+    `BSG_IO_IN_A(sdi,ncmd,B,1,NONE);                                                          
+                                               |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 130, column 48.
+    `BSG_IO_IN_A(sdi,ncmd,C,2,NONE);                             
+                                               |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 131, column 48.
+    `BSG_IO_IN_A(sdi,ncmd,D,3,NONE);
+                                   |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 132, column 48.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 133, column 48.
+    `BSG_IO_OUT_A(sdi,token,C,2,NONE);                                                          
+                                                 |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 137, column 50.
+    `BSG_IO_OUT_A(sdi,token,D,3,NONE);
+                                     |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 138, column 50.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 139, column 50.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 140, column 50.
+                             
+                            |
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 145, column 52.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 146, column 52.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 147, column 52.
+Warning : Ignoring unexpected semicolon. [VLOGPT-670]
+        : in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 148, column 52.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'VLOGPT-670'.
+@file(syn.tcl) 15: puts "elaborate bsg_chip" 
+elaborate bsg_chip
+@file(syn.tcl) 16: elaborate bsg_chip
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-81'.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'bsg_chip' from file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v'.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'log5' in module 'log_exp_base5_board_width_p50' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_acm_ctrl.v' on line 130.
+        : Genus removes the flip-flop or latch inferred for an unused signal or variable. To preserve the flip-flop or latch, set the hdl_preserve_unused_registers attribute to true or use a pragma in the RTL.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'bsg_round_robin_arb_inputs_p3h2_hold_on_valid_p0' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_round_robin_arb.v' on line 102.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_clk_0_p_i' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 17, column 26, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_clk_0_n_i' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 18, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_clk_1_p_i' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 18, column 27, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_clk_1_n_i' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 22, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_SMA_in_p_i' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 22, column 27, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_SMA_in_n_i' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 24, column 2, hid = 0.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'SMA_out_p_o_int' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 24, column 26, hid = 0.
+        : The undriven signal handling can be controlled by setting the attribute 'hdl_unconnected_value' before syn_generic command.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'SMA_out_n_o_int' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 28, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_sdi_token_o' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 49, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_sdo_sclk_o' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 52, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_sdo_ncmd_o' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 55, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_sdo_B_data_o' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 56, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_sdo_C_data_o' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 56, column 31, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_sdo_D_data_o' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 59, column 2, hid = 0.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'sdo_A_data_8_o_int' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 59, column 28, hid = 0.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'sdo_C_data_8_o_int' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 62, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_sdo_sclk_ex_o' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 69, column 2, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_sdi_tkn_ex_o' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 70, column 2, hid = 0.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'misc_L_3_o_int' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 85, column 23, hid = 0.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'misc_R_3_o_int' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 87, column 2, hid = 0.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'JTAG_TDO_o_int' in module 'bsg_chip' in file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/v/bsg_chip.v' on line 109, column 2, hid = 0.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'bsg_chip'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         1.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: bsg_chip, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.006s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: bsg_chip, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.002s)
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(syn.tcl) 17: puts "init_design -top bsg_chip" 
+init_design -top bsg_chip
+@file(syn.tcl) 18: init_design -top bsg_chip
+Started checking and loading power intent for design bsg_chip...
+================================================================
+No power intent for design 'bsg_chip'.
+Completed checking and loading power intent for design bsg_chip (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+=====================================================================================================================
+#
+# Reading SDC /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/clock_constraints_fragment.sdc for view:ss_100C_1v60.setup_view (constraint_mode:my_constraint_mode)
+#
+Error   : A required object parameter could not be found. [TUI-61] [create_clock]
+        : An object of type 'port|pin|hpin' named 'DEFAULT_CLOCK' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '1' of the SDC file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/clock_constraints_fragment.sdc': create_clock DEFAULT_CLOCK -name DEFAULT_CLOCK -period 0.0.
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Warning : Unsupported SDC command option. [SDC-201] [set_clock_groups]
+        : The clock 'DEFAULT_CLOCK' specified  in 'set_clock_groups' is not a valid clock object for mode 'ss_100C_1v60.setup_view'.
+        : The current version does not support this SDC command option.  However, future versions may be enhanced to support this option.
+Error   : Invalid SDC command option combination. [SDC-204] [set_clock_groups]
+        : All clocks passed to -group option are invalid in 'set_clock_groups'.
+        : This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '2' of the SDC file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/clock_constraints_fragment.sdc': set_clock_groups -asynchronous  -group { DEFAULT_CLOCK }.
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      0 , failed      1 (runtime  0.00)
+ "set_clock_groups"         - successful      0 , failed      1 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 2
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/pin_constraints_fragment.sdc for view:ss_100C_1v60.setup_view (constraint_mode:my_constraint_mode)
+#
+Statistics for commands executed by read_sdc:
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/../../../ee477-hammer-cad/tcl/bsg_tag_timing.tcl for view:ss_100C_1v60.setup_view (constraint_mode:my_constraint_mode)
+#
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/../../../ee477-hammer-cad/tcl/bsg_chip/bsg_chip_timing_constraint.tcl for view:ss_100C_1v60.setup_view (constraint_mode:my_constraint_mode)
+#
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/cfg/constraints.tcl for view:ss_100C_1v60.setup_view (constraint_mode:my_constraint_mode)
+#
+INFO[BSG]: begin bsg_chip_ucsd_bsg_332_timing_constraint function in script /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/syn.tcl
+
+
+Constrain design bsg_chip timing with the following settings:
+
+Parameter                             Value
+-----------------------               -------------------
+Core main clock period                7.6 ns
+Out IO clock period                   20 ns
+In IO clock period                    20 ns
+Max allowed on-chip in  IO skew (%)   2.5 %
+Max allowed on-chip in  IO skew       0.5 ns
+Max allowed on-chip out IO skew (%)   2.5 %
+Max allowed on-chip out IO skew       0.5 ns
+Core main clock uncertainty           0.291 ns
+Out IO clock uncertainty              0.291 ns
+In  IO clock uncertainty              0.291 ns
+-----------------------               -------------------
+
+INFO[BSG]: Constraining clock crossing paths to 7.6 (ns).
+INFO[BSG]: Library setup information:
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 21.12-s068_1
+  Generated on:           Jun 03 2024  08:54:55 am
+  Module:                 bsg_chip
+  Library domain:         ss_100C_1v60.setup_cond
+    Domain index:         0
+    Technology library:   sky130_fd_sc_hd__ss_100C_1v60 1.0000000000
+  Operating conditions:   ss_100C_1v60 
+  Interconnect mode:      global
+  Area mode:              physical library
+============================================================
+
+
+ Clock Description
+ ----------------- 
+
+                                     Clock                                               Clock                         No of   
+          Mode                       Name                 Period    Rise      Fall       Domain       Pin/Port       Registers 
+-------------------------------------------------------------------------------------------------------------------------------
+ss_100C_1v60.setup_view  core_clk                           7600.0   0.0       3800.0   domain_1   p_misc_L_4_i        9279    
+ss_100C_1v60.setup_view  master_io_clk                     20000.0   0.0      10000.0   domain_1   p_PLL_CLK_i          93     
+ss_100C_1v60.setup_view  sdi_A_sclk                        20000.0   0.0      10000.0   domain_1   p_sdi_sclk_i[0]     1225    
+ss_100C_1v60.setup_view  sdi_B_sclk                        20000.0   0.0      10000.0   domain_1   p_sdi_sclk_i[1]       0     
+ss_100C_1v60.setup_view  sdi_C_sclk                        20000.0   0.0      10000.0   domain_1   p_sdi_sclk_i[2]       0     
+ss_100C_1v60.setup_view  sdi_D_sclk                        20000.0   0.0      10000.0   domain_1   p_sdi_sclk_i[3]       0     
+ss_100C_1v60.setup_view  sdo_A_token_clk                   20000.0   0.0      10000.0   domain_1   p_sdo_token_i[0]     30     
+ss_100C_1v60.setup_view  sdo_B_token_clk                   20000.0   0.0      10000.0   domain_1   p_sdo_token_i[1]      0     
+ss_100C_1v60.setup_view  sdo_C_token_clk                   20000.0   0.0      10000.0   domain_1   p_sdo_token_i[2]      0     
+ss_100C_1v60.setup_view  sdo_D_token_clk                   20000.0   0.0      10000.0   domain_1   p_sdo_token_i[3]      0     
+ss_100C_1v60.setup_view  core_clk_BSG_CHIP_cdc           7600000.0   0.0    3800000.0   domain_1   p_misc_L_4_i        9279    
+ss_100C_1v60.setup_view  master_io_clk_BSG_CHIP_cdc     20000000.0   0.0   10000000.0   domain_1   p_PLL_CLK_i          93     
+ss_100C_1v60.setup_view  sdi_A_sclk_BSG_CHIP_cdc        20000000.0   0.0   10000000.0   domain_1   p_sdi_sclk_i[0]     1225    
+ss_100C_1v60.setup_view  sdi_B_sclk_BSG_CHIP_cdc        20000000.0   0.0   10000000.0   domain_1   p_sdi_sclk_i[1]       0     
+ss_100C_1v60.setup_view  sdi_C_sclk_BSG_CHIP_cdc        20000000.0   0.0   10000000.0   domain_1   p_sdi_sclk_i[2]       0     
+ss_100C_1v60.setup_view  sdi_D_sclk_BSG_CHIP_cdc        20000000.0   0.0   10000000.0   domain_1   p_sdi_sclk_i[3]       0     
+ss_100C_1v60.setup_view  sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   0.0   10000000.0   domain_1   p_sdo_token_i[0]     30     
+ss_100C_1v60.setup_view  sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   0.0   10000000.0   domain_1   p_sdo_token_i[1]      0     
+ss_100C_1v60.setup_view  sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   0.0   10000000.0   domain_1   p_sdo_token_i[2]      0     
+ss_100C_1v60.setup_view  sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   0.0   10000000.0   domain_1   p_sdo_token_i[3]      0     
+
+ Clock Network Latency / Setup Uncertainty
+ ----------------------------------------- 
+
+                                                       Network   Network   Source   Source     Setup        Setup    
+                                    Clock              Latency   Latency  Latency  Latency  Uncertainty  Uncertainty 
+          Mode                      Name                Rise      Fall      Rise     Fall       Rise         Fall    
+---------------------------------------------------------------------------------------------------------------------
+ss_100C_1v60.setup_view core_clk                           0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view master_io_clk                      0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view sdi_A_sclk                         0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view sdi_B_sclk                         0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view sdi_C_sclk                         0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view sdi_D_sclk                         0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view sdo_A_token_clk                    0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view sdo_B_token_clk                    0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view sdo_C_token_clk                    0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view sdo_D_token_clk                    0.0       0.0      0.0      0.0        291.0        291.0 
+ss_100C_1v60.setup_view core_clk_BSG_CHIP_cdc              0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view master_io_clk_BSG_CHIP_cdc         0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view sdi_A_sclk_BSG_CHIP_cdc            0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view sdi_B_sclk_BSG_CHIP_cdc            0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view sdi_C_sclk_BSG_CHIP_cdc            0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view sdi_D_sclk_BSG_CHIP_cdc            0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view sdo_A_token_clk_BSG_CHIP_cdc       0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view sdo_B_token_clk_BSG_CHIP_cdc       0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view sdo_C_token_clk_BSG_CHIP_cdc       0.0       0.0      0.0      0.0          0.0          0.0 
+ss_100C_1v60.setup_view sdo_D_token_clk_BSG_CHIP_cdc       0.0       0.0      0.0      0.0          0.0          0.0 
+
+ Clock Relationship (with uncertainty & latency)
+ ----------------------------------------------- 
+
+            Mode                        From                            To                   R->R         R->F         F->R         F->F    
+--------------------------------------------------------------------------------------------------------------------------------------------
+  ss_100C_1v60.setup_view   core_clk                       core_clk                           7309.0       3509.0       3509.0       7309.0 
+  ss_100C_1v60.setup_view   core_clk                       master_io_clk                       109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       sdi_A_sclk                          109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       sdi_B_sclk                          109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       sdi_C_sclk                          109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       sdi_D_sclk                          109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       sdo_A_token_clk                     109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       sdo_B_token_clk                     109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       sdo_C_token_clk                     109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       sdo_D_token_clk                     109.0        109.0        -91.0        -91.0 
+  ss_100C_1v60.setup_view   core_clk                       core_clk_BSG_CHIP_cdc              7600.0       7600.0       3800.0       3800.0 
+  ss_100C_1v60.setup_view   core_clk                       master_io_clk_BSG_CHIP_cdc          400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   core_clk                       sdi_A_sclk_BSG_CHIP_cdc             400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   core_clk                       sdi_B_sclk_BSG_CHIP_cdc             400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   core_clk                       sdi_C_sclk_BSG_CHIP_cdc             400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   core_clk                       sdi_D_sclk_BSG_CHIP_cdc             400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   core_clk                       sdo_A_token_clk_BSG_CHIP_cdc        400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   core_clk                       sdo_B_token_clk_BSG_CHIP_cdc        400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   core_clk                       sdo_C_token_clk_BSG_CHIP_cdc        400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   core_clk                       sdo_D_token_clk_BSG_CHIP_cdc        400.0        800.0        600.0        200.0 
+  ss_100C_1v60.setup_view   master_io_clk                  core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   master_io_clk                  master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   master_io_clk                  core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   master_io_clk                  sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk                     sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk                     sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk                     sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk                     sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk                sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk                sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk                sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                core_clk                            109.0        -91.0        109.0        -91.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                master_io_clk                     19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdi_A_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdi_B_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdi_C_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdi_D_sclk                        19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdo_A_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdo_B_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdo_C_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdo_D_token_clk                   19709.0       9709.0       9709.0      19709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                core_clk_BSG_CHIP_cdc             20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                master_io_clk_BSG_CHIP_cdc        20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdi_A_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdi_B_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdi_C_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdi_D_sclk_BSG_CHIP_cdc           20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdo_A_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdo_B_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdo_C_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk                sdo_D_token_clk_BSG_CHIP_cdc      20000.0      20000.0      10000.0      10000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          core_clk                           7309.0       3509.0       7309.0       3509.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          core_clk_BSG_CHIP_cdc           7600000.0    3800000.0    3800000.0    7600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          master_io_clk_BSG_CHIP_cdc       400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdi_A_sclk_BSG_CHIP_cdc          400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdi_B_sclk_BSG_CHIP_cdc          400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdi_C_sclk_BSG_CHIP_cdc          400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdi_D_sclk_BSG_CHIP_cdc          400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdo_A_token_clk_BSG_CHIP_cdc     400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdo_B_token_clk_BSG_CHIP_cdc     400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdo_C_token_clk_BSG_CHIP_cdc     400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   core_clk_BSG_CHIP_cdc          sdo_D_token_clk_BSG_CHIP_cdc     400000.0     800000.0     200000.0     600000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   master_io_clk_BSG_CHIP_cdc     sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_A_sclk_BSG_CHIP_cdc        sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_B_sclk_BSG_CHIP_cdc        sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_C_sclk_BSG_CHIP_cdc        sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdi_D_sclk_BSG_CHIP_cdc        sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_A_token_clk_BSG_CHIP_cdc   sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_B_token_clk_BSG_CHIP_cdc   sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_C_token_clk_BSG_CHIP_cdc   sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   core_clk                            509.0        -91.0        109.0        309.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   master_io_clk                     19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdi_A_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdi_B_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdi_C_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdi_D_sclk                        19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdo_A_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdo_B_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdo_C_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdo_D_token_clk                   19709.0       9709.0      19709.0       9709.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   core_clk_BSG_CHIP_cdc            800000.0     600000.0     400000.0     200000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   master_io_clk_BSG_CHIP_cdc     20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdi_A_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdi_B_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdi_C_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdi_D_sclk_BSG_CHIP_cdc        20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdo_A_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdo_B_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdo_C_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+  ss_100C_1v60.setup_view   sdo_D_token_clk_BSG_CHIP_cdc   sdo_D_token_clk_BSG_CHIP_cdc   20000000.0   10000000.0   10000000.0   20000000.0 
+INFO[BSG]: end bsg_chip_ucsd_bsg_332_timing_constraint function in script /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/decryptor/bsg_acm/build/syn-rundir/syn.tcl
+
+Statistics for commands executed by read_sdc:
+ "add_to_collection"        - successful      8 , failed      0 (runtime  0.00)
+ "all_inputs"               - successful      2 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      3 , failed      0 (runtime  0.00)
+ "create_clock"             - successful     20 , failed      0 (runtime  0.00)
+ "current_design"           - successful      1 , failed      0 (runtime  0.00)
+ "filter_collection"        - successful      1 , failed      0 (runtime  0.00)
+ "foreach_in_collection"    - successful      6 , failed      0 (runtime  0.42)
+ "get_clock"                - successful     20 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful     47 , failed      0 (runtime  0.00)
+ "get_ports"                - successful    103 , failed      0 (runtime  0.01)
+ "group_path"               - successful      3 , failed      0 (runtime  0.00)
+ "remove_from_collection"   - successful     23 , failed      0 (runtime  0.00)
+ "set_clock_groups"         - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful     10 , failed      0 (runtime  0.00)
+ "set_data_check"           - successful     72 , failed      0 (runtime  0.40)
+ "set_false_path"           - successful     10 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful     17 , failed      0 (runtime  0.01)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.57)
+ "set_max_delay"            - successful     10 , failed      0 (runtime  0.00)
+ "set_min_delay"            - successful     10 , failed      0 (runtime  0.00)
+ "set_multicycle_path"      - successful     72 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:05 (hh:mm:ss)
+Warning : No nominal temperature specified in cap table file. [PHYS-26]
+        : Room temperature will be used for resistance calculation.
+        : Nominal temperature is used for calculating the temperature dependent resistance.
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'M3' and 'M6' is too large.
+Warning : No nominal temperature specified in cap table file. [PHYS-26]
+        : Room temperature will be used for resistance calculation.
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'M3' and 'M6' is too large.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'li1' in lef is '0.17', minimum width of layer 'M1' in cap table is '0.14'.
+        : Compare the layer MinWidth of the cap_table_file with the MinWidth (WIDTH) of the corresponding layer in LEF. Set the attribute 'shrink_factor' to adjust the MinWidth layer value in the captable file
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'met2' in lef is '0.14', minimum width of layer 'M3' in cap table is '0.3'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'met4' in lef is '0.3', minimum width of layer 'M5' in cap table is '0.8'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'met5' in lef is '1.6', minimum width of layer 'M6' in cap table is '10'.
+Warning : No nominal temperature specified in cap table file. [PHYS-26]
+        : Room temperature will be used for resistance calculation.
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'M3' and 'M6' is too large.
+Warning : No nominal temperature specified in cap table file. [PHYS-26]
+        : Room temperature will be used for resistance calculation.
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'M3' and 'M6' is too large.
+  Setting attribute of root '/': 'read_qrc_tech_file_rc_corner' = true
+@file(syn.tcl) 19: puts "set_db root: .auto_ungroup none" 
+set_db root: .auto_ungroup none
+@file(syn.tcl) 20: set_db root: .auto_ungroup none
+  Setting attribute of root '/': 'auto_ungroup' = none
+@file(syn.tcl) 21: puts "set_units -capacitance 1.0pF" 
+set_units -capacitance 1.0pF
+@file(syn.tcl) 22: set_units -capacitance 1.0pF
+@file(syn.tcl) 23: puts "set_load_unit -picofarads 1" 
+set_load_unit -picofarads 1
+@file(syn.tcl) 24: set_load_unit -picofarads 1
+@file(syn.tcl) 25: puts "set_units -time 1.0ns" 
+set_units -time 1.0ns
+@file(syn.tcl) 26: set_units -time 1.0ns
+@file(syn.tcl) 28: puts "set_dont_use \[get_db lib_cells */*sdf*\]"
+set_dont_use [get_db lib_cells */*sdf*]
+@file(syn.tcl) 29: if { [get_db lib_cells */*sdf*] ne "" } {
+    set_dont_use [get_db lib_cells */*sdf*]
+} else {
+    puts "WARNING: cell */*sdf* was not found for set_dont_use"
+}
+@file(syn.tcl) 36: puts "set_dont_use \[get_db lib_cells */sky130_fd_sc_hd__probe_p_*\]"
+set_dont_use [get_db lib_cells */sky130_fd_sc_hd__probe_p_*]
+@file(syn.tcl) 37: if { [get_db lib_cells */sky130_fd_sc_hd__probe_p_*] ne "" } {
+    set_dont_use [get_db lib_cells */sky130_fd_sc_hd__probe_p_*]
+} else {
+    puts "WARNING: cell */sky130_fd_sc_hd__probe_p_* was not found for set_dont_use"
+}
+@file(syn.tcl) 44: puts "set_dont_use \[get_db lib_cells */sky130_fd_sc_hd__probec_p_*\]"
+set_dont_use [get_db lib_cells */sky130_fd_sc_hd__probec_p_*]
+@file(syn.tcl) 45: if { [get_db lib_cells */sky130_fd_sc_hd__probec_p_*] ne "" } {
+    set_dont_use [get_db lib_cells */sky130_fd_sc_hd__probec_p_*]
+} else {
+    puts "WARNING: cell */sky130_fd_sc_hd__probec_p_* was not found for set_dont_use"
+}
+@file(syn.tcl) 51: puts "write_db -to_file pre_genus_syn_with_preserve" 
+write_db -to_file pre_genus_syn_with_preserve
+@file(syn.tcl) 52: write_db -to_file pre_genus_syn_with_preserve
+  Libraries have 333 usable logic and 43 usable sequential lib-cells.
+Finished exporting design database to file 'pre_genus_syn_with_preserve' for 'bsg_chip' (command execution time mm:ss cpu = 00:08, real = 00:09).
+@file(syn.tcl) 53: puts "syn_generic" 
+syn_generic
+@file(syn.tcl) 54: syn_generic
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_clk_0_p_i' in module 'bsg_chip'.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_clk_0_n_i' in module 'bsg_chip'.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_clk_1_p_i' in module 'bsg_chip'.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_clk_1_n_i' in module 'bsg_chip'.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_SMA_in_p_i' in module 'bsg_chip'.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'p_SMA_in_n_i' in module 'bsg_chip'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'SMA_out_p_o_int' in module 'bsg_chip'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'SMA_out_n_o_int' in module 'bsg_chip'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'ELABUTL-123'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'sdo_A_data_8_o_int' in module 'bsg_chip'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'sdo_C_data_8_o_int' in module 'bsg_chip'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'misc_L_3_o_int' in module 'bsg_chip'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'misc_R_3_o_int' in module 'bsg_chip'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'JTAG_TDO_o_int' in module 'bsg_chip'.
+##Generic Timing Info for library domain: ss_100C_1v60.setup_cond typical gate delay: 291.0 ps std_slew: 35.6 ps std_load: 5.4 fF
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: bsg_chip, recur: true)
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 64 hierarchical instances.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'GLO-34'.
+Completed mux data reorder optimization (accepts: 39, rejects: 0, runtime: 4.797s)
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][4]'.
+        : To prevent this optimization, set the 'optimize_constant_0_flops' root attribute to 'false' or 'optimize_constant_0_seq' instance attribute to 'false'. You can also see the complete list of deleted sequential with command "report sequential -deleted" (on Reason "constant0").
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][5]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][6]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][7]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][8]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][9]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][10]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][11]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][12]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][13]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][14]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][15]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][16]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][17]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][18]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][19]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][20]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][21]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][22]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'guts/n[0].clnt.clnt/genblk1.cgol_inst/output_channel/genblk1.piso/two_fifo.fifo0/mem_1r1w/synth/nz.mem_reg[0][23]'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'GLO-12'.
+Info    : Replacing a flip-flop with a logic constant 1. [GLO-13]
+        : The instance is 'guts/loop[0].adapter/piso/piso.fifo1/dff/data_r_reg[5]'.
+        : To prevent this optimization, set the 'optimize_constant_1_flops' root attribute to 'false' or 'optimize_constant_1_seq' instance attribute to 'false'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][0]'.
+        : The value used to replace the flop can be set by the root attribute 'optimize_seq_x_to'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][1]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][2]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][3]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][4]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][5]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][6]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][7]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][8]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][9]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][10]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][11]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][12]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][13]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][14]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][15]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][16]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][17]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][18]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'guts/loop[0].router/in_ch[2].twofer/mem_1r1w/synth/nz.mem_reg[0][19]'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'GLO-21'.
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.255
+Via Resistance      : 4.339 ohm (from cap_table_file)
+Site size           : 3.180 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              V         0.00        0.000345  
+M2              H         1.00        0.000339  
+M3              V         1.00        0.000359  
+M4              H         1.00        0.000346  
+M5              V         1.00        0.000201  
+M6              H         1.00        0.000150  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              V         0.00         0.911886  
+M2              H         1.00         1.100879  
+M3              V         1.00         0.420464  
+M4              H         1.00         0.196217  
+M5              V         1.00         0.119537  
+M6              H         1.00         0.004127  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+li1             V         0.00         0.170000  
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'bsg_chip' to generic gates using 'medium' effort.
+PBS_Generic-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:43(00:00:39) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:55:18 (Jun03) |  847.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+TNS Restructuring config: no_value at stage: generic applied.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition threshold '300000' for distributed generic optimization to kick in.
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: bsg_chip, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.265s)
+Starting mux data reorder optimization [v1.0] (stage: post_to_gen_setup, startdef: bsg_chip, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.191s)
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.255
+Via Resistance      : 4.339 ohm (from cap_table_file)
+Site size           : 3.180 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              V         0.00        0.000345  
+M2              H         1.00        0.000339  
+M3              V         1.00        0.000359  
+M4              H         1.00        0.000346  
+M5              V         1.00        0.000201  
+M6              H         1.00        0.000150  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              V         0.00         0.911886  
+M2              H         1.00         1.100879  
+M3              V         1.00         0.420464  
+M4              H         1.00         0.196217  
+M5              V         1.00         0.119537  
+M6              H         1.00         0.004127  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+li1             V         0.00         0.170000  
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------
+| Trick | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------
+--------------------------------------------
+Starting infer macro optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed infer macro optimization (accepts: 0, rejects: 127, runtime: 0.268s)
+Starting decode mux sandwich optimization [v2.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed decode mux sandwich optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting decode mux optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed decode mux optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting chop wide muxes [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed chop wide muxes (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.010s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.031s)
+Starting priority mux optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed priority mux optimization (accepts: 0, rejects: 0, runtime: 4.888s)
+Starting constant-data mux optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed constant-data mux optimization (accepts: 0, rejects: 0, runtime: 0.006s)
+Starting chain-to-tree inequality transform [v2.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.317s)
+Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.026s)
+Starting common select mux optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed common select mux optimization (accepts: 0, rejects: 1, runtime: 0.017s)
+Starting identity transform [v3.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed identity transform (accepts: 122, rejects: 5, runtime: 1.264s)
+Starting reduce operator chain [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed reduce operator chain (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.010s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.035s)
+Starting optimize datapath elements [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed optimize datapath elements (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting datapath recasting [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed datapath recasting (accepts: 0, rejects: 122, runtime: 0.944s)
+Starting clip mux common data inputs [v1.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed clip mux common data inputs (accepts: 126, rejects: 0, runtime: 0.048s)
+Starting clip the non-user hierarchies [v2.0] (stage: pre_rtlopt, startdef: bsg_chip, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.001s)
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------
+| Trick       | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------
+| ume_runtime |       2 |       0 |         1.00 | 
+| ume_runtime |       2 |       0 |         0.00 | 
+--------------------------------------------------
+Number of big hc bmuxes before = 43
+Number of non-ctl's : 1
+mux_cmbsop_async_token_reset_182_11 
+SOP DEBUG : Module= bsg_guts_num_channels_p1_channel_width_p8_nodes_p1, Cluster= ctl_182_11, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_182_11.
+Number of non-ctl's : 1
+mux_cmbsop_inputs_2.sel_one_hot_n_102_10 
+SOP DEBUG : Module= bsg_round_robin_arb_inputs_p3h2_hold_on_valid_p0, Cluster= ctl_102_10, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_102_10.
+Number of non-ctl's : 1
+mux_cmbsop_inputs_3.sel_one_hot_n_147_10 
+SOP DEBUG : Module= bsg_round_robin_arb_inputs_p3h3_hold_on_valid_p0, Cluster= ctl_147_10, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_147_10.
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : Pre-processing optimizations applied to datapath logic in 'bsg_chip':
+          live_trim(2) sop(3) input_constant_speculation(60) 
+Info    : Optimizing datapath logic. [DPOPT-1]
+        : Optimizing datapath logic in 'bsg_chip'.
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_107_0'

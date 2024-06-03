@@ -1,0 +1,94 @@
+                         Chronologic VCS (TM)
+       Version Q-2020.03-SP1_Full64 -- Mon Jun  3 08:07:29 2024
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v'
+Parsing design file 'v/bsg_acm_cell_tb.v'
+Parsing design file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v'
+Parsing design file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v'
+Parsing included file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v'.
+Back to file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v'.
+Parsing design file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_reset_gen.v'
+Parsing included file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v'.
+Back to file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_reset_gen.v'.
+Parsing design file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_node_trace_replay.v'
+Parsing included file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v'.
+Back to file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_node_trace_replay.v'.
+Parsing design file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/trace_rom.v'
+Parsing design file 'build/tech-sky130-cache/primitives.v'
+Parsing design file 'build/tech-sky130-cache/sky130_fd_sc_hd.v'
+Top Level Modules:
+       bsg_acm_cell_tb
+TimeScale is 1 ps / 1 ps
+
+Warning-[IWNF] Implicit wire has no fanin
+build/tech-sky130-cache/sky130_fd_sc_hd.v, 41875
+  Implicit wire 'AWAKE' does not have any driver, please make sure this is 
+  intended.
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf"
+   ***    Annotation scope: bsg_acm_cell_tb.DUT
+   ***    MTM selection: "MAXIMUM"
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Mon Jun  3 08:07:31 2024
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+          Total errors: 0
+          Total warnings: 0
+   ***    SDF annotation completed: Mon Jun  3 08:07:31 2024
+
+
+Starting vcs inline pass...
+28 modules and 2 UDPs read.
+recompiling module SdfDummyMod
+recompiling module bsg_popcount_width_p4_mapped
+recompiling module bsg_popcount_width_p4_10_mapped
+recompiling module bsg_popcount_width_p8_mapped
+recompiling module bsg_acm_cell
+recompiling module bsg_acm_cell_tb
+recompiling module bsg_nonsynth_clock_gen
+recompiling module bsg_nonsynth_reset_gen
+recompiling module bsg_fsb_node_trace_replay
+recompiling module trace_rom
+recompiling module sky130_fd_sc_hd__conb
+recompiling module sky130_fd_sc_hd__conb_1
+recompiling module sky130_fd_sc_hd__dfxtp
+recompiling module sky130_fd_sc_hd__dfxtp_1
+recompiling module sky130_fd_sc_hd__fa
+recompiling module sky130_fd_sc_hd__fa_1
+recompiling module sky130_fd_sc_hd__ha
+recompiling module sky130_fd_sc_hd__ha_1
+recompiling module sky130_fd_sc_hd__mux2i
+recompiling module sky130_fd_sc_hd__mux2i_1
+recompiling module sky130_fd_sc_hd__o22ai
+recompiling module sky130_fd_sc_hd__o22ai_1
+recompiling module sky130_fd_sc_hd__o211ai
+recompiling module sky130_fd_sc_hd__o211ai_1
+recompiling module sky130_fd_sc_hd__or2
+recompiling module sky130_fd_sc_hd__or2_1
+recompiling module sky130_fd_sc_hd__xor2
+recompiling module sky130_fd_sc_hd__xor2_1
+All of 28 modules done
+make[1]: Entering directory `/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv ]; then chmod a-x /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv; fi
+g++  -o /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib -L/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _32342_archive_1.so objs/udps/wizTW.o objs/udps/bNnRR.o  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcs_save_restore_new.o /home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv up to date
+make[1]: Leaving directory `/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir'
+CPU time: 1.801 seconds to compile + .269 seconds to elab + .467 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)

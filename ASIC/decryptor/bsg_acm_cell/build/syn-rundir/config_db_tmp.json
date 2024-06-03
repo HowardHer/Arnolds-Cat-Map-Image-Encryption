@@ -1,0 +1,382 @@
+{
+    "bsg_root": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl",
+    "cadence.CDS_LIC_FILE": "27006@cadencels.s.uw.edu",
+    "cadence.cadence_home": "/home/projects/ee477.2023wtr/cad/cadence",
+    "cadence.common_path": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/common/cadence",
+    "cadence.extra_env_vars": [],
+    "drc.inputs.additional_drc_text": "",
+    "drc.inputs.additional_drc_text_mode": "auto",
+    "drc.inputs.drc_rules_to_run": [],
+    "drc.inputs.layout_file": null,
+    "drc.inputs.top_module": null,
+    "drc.magic.magic_bin": "/home/projects/ee477.2023wtr/cad/magic/bin/magic",
+    "drc.magic.rcfile": "/home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.tech/magic/sky130A.magicrc",
+    "drc.submit.command": "local",
+    "drc.submit.settings": [],
+    "formal.inputs.check": "lec",
+    "formal.inputs.input_files": [],
+    "formal.inputs.reference_files": [],
+    "formal.inputs.top_module": null,
+    "formal.submit.command": "local",
+    "formal.submit.settings": [],
+    "klayout.klayout_bin": "/home/projects/ee477.2023wtr/cad/klayout/klayout",
+    "klayout.layer_properties": "/home/projects/ee477/cad/pdk/sky130A/libs.tech/klayout/sky130A.lyp",
+    "klayout.ruby_lib": "/home/projects/ee477.2023wtr/cad/klayout/ruby/lib64/ruby:/home/projects/ee477.2023wtr/cad/klayout/ruby/lib64/rubygems:/home/projects/ee477.2023wtr/cad/klayout/ruby/share/ruby",
+    "lvs.inputs.additional_lvs_text": "",
+    "lvs.inputs.additional_lvs_text_mode": "auto",
+    "lvs.inputs.ilms": [],
+    "lvs.inputs.layout_file": null,
+    "lvs.inputs.schematic_files": [],
+    "lvs.inputs.top_module": null,
+    "lvs.netgen.netgen_bin": "/home/projects/ee477.2023wtr/cad/netgen/bin/netgen",
+    "lvs.netgen.setup_file": "/home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl",
+    "lvs.submit.command": "local",
+    "lvs.submit.settings": [],
+    "mentor.MGLS_LICENSE_FILE": "27007@mentorls.s.uw.edu",
+    "mentor.common_path": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/common/mentor",
+    "mentor.extra_env_vars": [
+        {
+            "PDK_HOME": "/s8/V2.0.1"
+        }
+    ],
+    "mentor.mentor_home": "",
+    "openroad.common_path": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/common/openroad",
+    "par.blockage_spacing": 3.0,
+    "par.blockage_spacing_top_layer": "met4",
+    "par.generate_power_straps_method": "by_tracks",
+    "par.generate_power_straps_options.by_tracks.blockage_spacing": 3.0,
+    "par.generate_power_straps_options.by_tracks.blockage_spacing_met2": 4.0,
+    "par.generate_power_straps_options.by_tracks.pin_layers": [
+        "met5"
+    ],
+    "par.generate_power_straps_options.by_tracks.power_utilization": 0.1,
+    "par.generate_power_straps_options.by_tracks.power_utilization_met2": 0.05,
+    "par.generate_power_straps_options.by_tracks.power_utilization_met4": 0.3,
+    "par.generate_power_straps_options.by_tracks.power_utilization_met5": 0.5,
+    "par.generate_power_straps_options.by_tracks.strap_layers": [
+        "met4",
+        "met5"
+    ],
+    "par.generate_power_straps_options.by_tracks.track_offset": 0.0,
+    "par.generate_power_straps_options.by_tracks.track_spacing": 1,
+    "par.generate_power_straps_options.by_tracks.track_start": 10,
+    "par.generate_power_straps_options.by_tracks.track_start_met5": 1,
+    "par.generate_power_straps_options.by_tracks.track_width": 6,
+    "par.generate_power_straps_options.by_tracks.track_width_met5": 2,
+    "par.innovus.design_flow_effort": "extreme",
+    "par.innovus.version": "211",
+    "par.inputs.cap_table_file": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl",
+    "par.inputs.gds_map_file": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130_lefpin.map",
+    "par.inputs.gds_map_mode": "manual",
+    "par.inputs.gds_merge": true,
+    "par.inputs.gds_precision": 1000,
+    "par.inputs.gds_precision_mode": "auto",
+    "par.inputs.input_files": [],
+    "par.inputs.klayout_techfile_source": "/home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.tech/klayout/sky130A.lyt",
+    "par.inputs.openrcx_techfile": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130hd.rcx_rules",
+    "par.inputs.physical_only_cells_list": [],
+    "par.inputs.physical_only_cells_mode": "auto",
+    "par.inputs.post_synth_sdc": null,
+    "par.inputs.top_module": null,
+    "par.power_straps_mode": "generate",
+    "par.power_straps_script_contents": null,
+    "par.submit.command": "local",
+    "par.submit.settings": [],
+    "pcb.inputs.top_module": null,
+    "pcb.submit.command": "local",
+    "pcb.submit.settings": [],
+    "power.inputs.database": null,
+    "power.inputs.end_times": [],
+    "power.inputs.extra_corners_only": false,
+    "power.inputs.saifs": [],
+    "power.inputs.spefs": [],
+    "power.inputs.start_times": [],
+    "power.inputs.tb_dut": "dut",
+    "power.inputs.tb_name": "TestDriver",
+    "power.inputs.waveforms": [],
+    "power.submit.command": "local",
+    "power.submit.settings": [],
+    "sim.inputs.all_regs": "",
+    "sim.inputs.benchmarks": [],
+    "sim.inputs.compiler_cc_opts": [],
+    "sim.inputs.compiler_ld_opts": [],
+    "sim.inputs.defines": [],
+    "sim.inputs.execute_sim": true,
+    "sim.inputs.execution_flags": [],
+    "sim.inputs.execution_flags_append": [],
+    "sim.inputs.execution_flags_prepend": [],
+    "sim.inputs.gl_register_force_value": 0,
+    "sim.inputs.input_files": [
+        "v/bsg_acm_cell.v",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v"
+    ],
+    "sim.inputs.level": "rtl",
+    "sim.inputs.options": [
+        "+vcs+vcdpluson",
+        "+vcs+vcdplusmemon",
+        "+vcs+vcdplusautoflushon",
+        "-sverilog",
+        "-debug_pp",
+        "+define+FUNCTIONAL",
+        "+define+UNIT_DELAY",
+        "+warn=noSDFCOM_UHICD",
+        "+warn=noSDFCOM_ANICD"
+    ],
+    "sim.inputs.parallel_runs": 1,
+    "sim.inputs.saif.end_time": "1ns",
+    "sim.inputs.saif.end_trigger_raw": "",
+    "sim.inputs.saif.mode": "none",
+    "sim.inputs.saif.start_time": "0ns",
+    "sim.inputs.saif.start_trigger_raw": "",
+    "sim.inputs.sdf_file": null,
+    "sim.inputs.seq_cells": "",
+    "sim.inputs.tb_dut": "dut",
+    "sim.inputs.tb_name": "bsg_acm_cell_tb",
+    "sim.inputs.timescale": "1ns/1ps",
+    "sim.inputs.timing_annotated": true,
+    "sim.inputs.top_module": "UNSPECIFIED",
+    "sim.submit.command": "local",
+    "sim.submit.settings": [],
+    "sim.vcs.disable_fgp": true,
+    "sim.vcs.disable_force_regs": true,
+    "sim.vcs.version": "Q-2020.03-SP1",
+    "sim.verdi.version": "Q-2020.03-SP2-8",
+    "sram_generator.fakeram.fakeram_make": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/bsg_fakeram/Makefile",
+    "sram_generator.fakeram.pinPitch_nm": 700,
+    "sram_generator.submit.command": "local",
+    "sram_generator.submit.settings": [],
+    "synopsys.MGLS_LICENSE_FILE": "27007@mentorls.s.uw.edu",
+    "synopsys.SNPSLMD_LICENSE_FILE": "27008@synopsysls.s.uw.edu",
+    "synopsys.synopsys_home": "/home/projects/ee477.2023wtr/cad/synopsys",
+    "synthesis.clock_gating_mode": "auto",
+    "synthesis.genus.generate_only": false,
+    "synthesis.genus.genus_bin": "/home/projects/ee477.2023wtr/cad/cadence/GENUS/GENUS211/bin/genus",
+    "synthesis.genus.version": "211",
+    "synthesis.genus.write_sdf_args": [
+        "-nosplit_timing_check",
+        "-timescale ns"
+    ],
+    "synthesis.inputs.input_files": [
+        "v/bsg_acm_cell.v",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v"
+    ],
+    "synthesis.inputs.preserve_modules": [],
+    "synthesis.inputs.top_module": "bsg_acm_cell",
+    "synthesis.submit.command": "local",
+    "synthesis.submit.settings": [],
+    "technology.core.special_cells": null,
+    "technology.core.stackup": "sky130_fd_sc_hd",
+    "technology.core.std_cell_rail_layer": "met1",
+    "technology.core.std_cell_supplies.ground": [
+        "VGND"
+    ],
+    "technology.core.std_cell_supplies.power": [
+        "VPWR"
+    ],
+    "technology.core.tap_cell_rail_reference": "sky130_fd_sc_hd__tap*",
+    "technology.pcb.bump_pad_metal_diameter": null,
+    "technology.pcb.bump_pad_opening_diameter": null,
+    "technology.sky130.dffram_lib": "PATH-TO-dffram/compiler/build",
+    "technology.sky130.lvs_deck_sources": [
+        "/s8/V2.0.1/LVS/Calibre/lvsControlFile_s8"
+    ],
+    "technology.sky130.openram_lib": "PATH-TO-sky130_fd_bd_sram/macros",
+    "technology.sky130.pdk_home": "/s8/V2.0.1",
+    "technology.sky130.sky130A": "/home/projects/ee477.2023wtr/cad/pdk/sky130A",
+    "technology.sky130.sky130_nda": "",
+    "technology.sky130.sky130_pdk": "PATH-TO-skywater-pdk",
+    "timing.inputs.input_files": [],
+    "timing.inputs.max_paths": 100,
+    "timing.inputs.post_synth_sdc": null,
+    "timing.inputs.sdf_file": null,
+    "timing.inputs.spefs": null,
+    "timing.inputs.top_module": null,
+    "timing.submit.command": "local",
+    "timing.submit.settings": [],
+    "timing.tempus.version": "211",
+    "vlsi.builtins.hammer_vlsi_path": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi",
+    "vlsi.builtins.is_complete": false,
+    "vlsi.core.build_system": "make",
+    "vlsi.core.drc_tool": "magic",
+    "vlsi.core.drc_tool_path": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/drc"
+    ],
+    "vlsi.core.formal_tool": "conformal",
+    "vlsi.core.formal_tool_path": [
+        "${vlsi.builtins.hammer_vlsi_path/formal",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer-cadence-plugins/formal"
+    ],
+    "vlsi.core.local_tool_path": "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad",
+    "vlsi.core.lvs_tool": "netgen",
+    "vlsi.core.lvs_tool_path": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/lvs"
+    ],
+    "vlsi.core.max_threads": 8,
+    "vlsi.core.node": 130,
+    "vlsi.core.par_tool": "innovus",
+    "vlsi.core.par_tool_path": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/par",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer-cadence-plugins/par"
+    ],
+    "vlsi.core.pcb_tool": "generic",
+    "vlsi.core.pcb_tool_path": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/pcb"
+    ],
+    "vlsi.core.power_tool": "nop",
+    "vlsi.core.power_tool_path": [
+        "${vlsi.builtins.hammer_vlsi_path/power"
+    ],
+    "vlsi.core.sim_tool": "vcs",
+    "vlsi.core.sim_tool_path": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/sim",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer-synopsys-plugins/sim"
+    ],
+    "vlsi.core.sram_generator_tool": "fakeram",
+    "vlsi.core.sram_generator_tool_path": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/sram_generator",
+        "hammer/src/hammer-vlsi/technology/sky130",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer-bsg-plugins/sram_generator"
+    ],
+    "vlsi.core.synthesis_tool": "genus",
+    "vlsi.core.synthesis_tool_path": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/synthesis",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer-cadence-plugins/synthesis"
+    ],
+    "vlsi.core.technology": "sky130",
+    "vlsi.core.technology_path": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology"
+    ],
+    "vlsi.core.timing_tool": "tempus",
+    "vlsi.core.timing_tool_path": [
+        "${vlsi.builtins.hammer_vlsi_path/timing",
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer-cadence-plugins/timing"
+    ],
+    "vlsi.inputs.bumps.assignments": [],
+    "vlsi.inputs.bumps.cell": "",
+    "vlsi.inputs.bumps.pitch": 0.0,
+    "vlsi.inputs.bumps.x": 0,
+    "vlsi.inputs.bumps.y": 0,
+    "vlsi.inputs.bumps_mode": "empty",
+    "vlsi.inputs.bumps_pin_naming_scheme": "A1",
+    "vlsi.inputs.clocks": [
+        {
+            "name": "DEFAULT_CLOCK",
+            "period": "0ns"
+        }
+    ],
+    "vlsi.inputs.custom_sdc_constraints": [],
+    "vlsi.inputs.custom_sdc_files": [
+        "/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/cfg/constraints.tcl"
+    ],
+    "vlsi.inputs.decaps": [],
+    "vlsi.inputs.default_output_load": 0.005,
+    "vlsi.inputs.delays": [],
+    "vlsi.inputs.dont_use_list": [],
+    "vlsi.inputs.dont_use_mode": "auto",
+    "vlsi.inputs.hierarchical.config_source": "none",
+    "vlsi.inputs.hierarchical.constraints": [],
+    "vlsi.inputs.hierarchical.manual_modules": [],
+    "vlsi.inputs.hierarchical.manual_placement_constraints": [],
+    "vlsi.inputs.hierarchical.mode": "flat",
+    "vlsi.inputs.hierarchical.top_module": "null",
+    "vlsi.inputs.ilms": [],
+    "vlsi.inputs.mmmc_corners": [
+        {
+            "name": "ss_100C_1v60",
+            "temp": "100 C",
+            "type": "setup",
+            "voltage": "1.60 V"
+        },
+        {
+            "name": "ff_n40C_1v95",
+            "temp": "-40 C",
+            "type": "hold",
+            "voltage": "1.95 V"
+        },
+        {
+            "name": "tt_025C_1v80",
+            "temp": "25 C",
+            "type": "extra",
+            "voltage": "1.80 V"
+        }
+    ],
+    "vlsi.inputs.output_loads": [],
+    "vlsi.inputs.pin.assignments": [
+        {
+            "layers": [
+                "met2",
+                "met4"
+            ],
+            "pins": "*",
+            "side": "bottom"
+        }
+    ],
+    "vlsi.inputs.pin.generate_mode": "semi_auto",
+    "vlsi.inputs.pin_mode": "generated",
+    "vlsi.inputs.placement_constraints": [
+        {
+            "height": 200,
+            "margins": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+            },
+            "path": "TOP",
+            "type": "toplevel",
+            "width": 200,
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "vlsi.inputs.power_spec_contents": null,
+    "vlsi.inputs.power_spec_mode": "auto",
+    "vlsi.inputs.power_spec_type": "cpf",
+    "vlsi.inputs.sram_parameters": [],
+    "vlsi.inputs.supplies.GND": "0 V",
+    "vlsi.inputs.supplies.VDD": "1.8 V",
+    "vlsi.inputs.supplies.ground": [
+        {
+            "name": "VSS",
+            "pin": "VSS"
+        },
+        {
+            "name": "VGND",
+            "pin": "VGND",
+            "tie": "VSS"
+        },
+        {
+            "name": "VNB",
+            "pin": "VNB",
+            "tie": "VSS"
+        }
+    ],
+    "vlsi.inputs.supplies.power": [
+        {
+            "name": "VDD",
+            "pin": "VDD"
+        },
+        {
+            "name": "VPWR",
+            "pin": "VPWR",
+            "tie": "VDD"
+        },
+        {
+            "name": "VPB",
+            "pin": "VPB",
+            "tie": "VDD"
+        }
+    ],
+    "vlsi.inputs.visualization.mode": "all",
+    "vlsi.inputs.visualization.shorten_path_depth": 1,
+    "vlsi.inputs.visualization.svg_file": "all.svg",
+    "vlsi.submit.command": "local",
+    "vlsi.submit.settings": [],
+    "vlsi.technology.bump_block_cut_layer": "via4",
+    "vlsi.technology.extra_libraries": [],
+    "vlsi.technology.extra_macro_sizes": [],
+    "vlsi.technology.extracted_tarballs_dir": null,
+    "vlsi.technology.placement_site": "unithd",
+    "vlsi.technology.tap_cell_interval": "15",
+    "vlsi.technology.tap_cell_offset": "5"
+}

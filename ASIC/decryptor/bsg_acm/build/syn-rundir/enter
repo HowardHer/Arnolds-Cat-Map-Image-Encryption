@@ -1,0 +1,3 @@
+export CADENCE_HOME="/home/projects/ee477.2023wtr/cad/cadence"
+export CDS_LIC_FILE="27006@cadencels.s.uw.edu"
+export GENUS_BIN="/home/projects/ee477.2023wtr/cad/cadence/GENUS/GENUS211/bin/genus"

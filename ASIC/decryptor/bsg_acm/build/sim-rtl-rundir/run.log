@@ -1,0 +1,119 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP1_Full64; Runtime version Q-2020.03-SP1_Full64;  Jun  3 08:53 2024
+bsg_double_trouble_pcb.cg with cycle_time_p 6667
+bsg_double_trouble_pcb.gateway.bgc.asic_core_gen_clk with cycle_time_p        7600
+bsg_double_trouble_pcb.gateway.bgc.asic_master_gen_clk with cycle_time_p       20000
+bsg_double_trouble_pcb.gateway.bgc.gateway_core_gen_clk with cycle_time_p        7600
+bsg_double_trouble_pcb.gateway.bgc.gateway_master_gen_clk with cycle_time_p       20000
+## bsg_mem_1r1w: instantiating width_p=         18, els_p=         64, read_write_same_addr_p=          0, harden_p=          0 (bsg_double_trouble_pcb.gateway.bgc.guts.link_downstream.ch[0].downstream.baf.MSYNC_1r1w)
+## bsg_mem_1r1w: instantiating width_p=         18, els_p=         64, read_write_same_addr_p=          0, harden_p=          0 (bsg_double_trouble_pcb.asic.ASIC.guts.link_downstream.ch[0].downstream.baf.MSYNC_1r1w)
+*Verdi* Loading libsscore_vcs202003.so
+FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
+(C) 1996 - 2021 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'waveform.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+bsg_double_trouble_pcb.gateway.bgc gateway creating clocks       7600       7600      20000      20000
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  0->1 time =     320000
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+__________ ___________  _______________________________
+\______   \\_   _____/ /   _____/\_   _____/\__    ___/
+ |       _/ |    __)_  \_____  \  |    __)_   |    |   
+ |    |   \ |        \ /        \ |        \  |    |  1->0 time =    2880000
+ |____|_  //_______  //_______  //_______  /  |____|   
+ ASYNC  \/         \/         \/         \/            
+### bsg_trace_replay SEND          76'b0000000000000000000000000000001000000000110000000011110000001000000000010100 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000001101000000010111000000010010000001000000000000000000100000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001000000010000000010000000011100000000001100000000111000000001110 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000010000000000101000000011000000001111000000001100000000100 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000100100000000101100000001111000000100000000000000000000001 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000100000001000000011000001000000000000000010000000010000000001111 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001000000001000000001110100000011000000000011100000000011000000011 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001000000000010100000011100000000111100000010000000000010111000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000010000000000000000000100100000010000000000000000001100000000111 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000001100000000111000000000111000000001000000000010100000001 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000100000000001010000000110000000111110000000011000000001001000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001001000000001011000000011010000000000000000000000000010000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000001110000000011000000000010100000000100000000010010000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000010000000011100000000110000000011010000000000010000000100100000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000100000010111100000001001000000000000000100000010000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000000111001001000000000000000000000000011000000001001000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000011000010001100000000011100000000010100000000101000000010011000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000001110000000011100000001100100000000000000000010010000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000001110000000100100000000000000000000000001100000000100100000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000011100001000101000000000101000000001110000000100100000001001000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001000111000000001110000000100000000000001100000001001000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000001111000000110010000000000000001000000000010000000000010000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000001110000000000000000000000000000000110000000011010000000100100 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000100011100000000001000000000111000100010010000000100100000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000011000000010000000000000000000100100000000000000000111000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000011001000000000000000000000000011000000100111000010001100 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000001010000000101010000000011000000001001000000010010000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000001100000001000000000000001000000010000000000000000011100 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001110000001000000000000000000010000000001100000000011100001000110 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000111000000000000000000001100000000101100000001000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001000000010010000000100000000000100100000001000000000000000001010 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001110000000100000000100000000001000000000001000000001110000000011 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000000000000000001000000000100000000001110000001011100000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001100000001001000000000111000000010010000000100000000000000000100 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001001000000010000000010000000010000100000001100000000111000000001 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000000010000000000100000000011000000001111000000000110000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000001110000000000100000000011000000001011000000110000000000000110001 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000100100000001000000011001101000000010000000110000000010100000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000001000000001000000001110100000001100000000011100000000011000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay SEND          76'b0000000000000000000000000000000000000000000000000000000000000000000000111000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000e00000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 00000000000001c0000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000020000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0001f80000000000780 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 00000007f0000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 00000000000fe000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 000f80000000003fc00 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 000803ff0000000c00f (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000007fe0000003 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000001ffc000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000f3c0000000003ff (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 00000001ce060000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 00080000000ff81e000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 000ae7c00800001df2f (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 000003ffff3bfe00000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 000ffe001ffffe07fe0 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 000fa8ffee007ffbe01 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0007fc7fec7ff801ff8 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0008001fc3efbdff800 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 000c7f80003f0f3edff (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0001e1fce00000787c7 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000707f08000006 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 00000000003c1fc0000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0001f800000000607e0 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 00000007c0000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 00000000000c0000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000020000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000010000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000200000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000100000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+### bsg_trace_replay RECEIVE matched 0000000000000000000 (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+############################################################################
+###### bsg_trace_replay DONE done_o=1 (trace finished addr=00000050) (bsg_double_trouble_pcb.gateway.bgc.guts.n[0].mstr.mstr.trace_replay)
+############################################################################
+$finish called from file "v/bsg_gateway_chip.v", line 174.
+$finish at simulation time             25357400
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 25357400 ps
+CPU Time:      0.680 seconds;       Data structure size:   0.3Mb
+Mon Jun  3 08:53:27 2024

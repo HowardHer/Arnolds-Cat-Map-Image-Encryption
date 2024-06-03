@@ -1,0 +1,299 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('./simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcs_fgp_get_is_cpu_affinity_disabled('./simv: undefined symbol: vcs_fgp_get_is_cpu_affinity_disabled')
+ANF: vcsd_enable_sva_success_callback('./simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('./simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('./simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('./simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('./simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('./simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vcsd_is_access_class_enabled('./simv: undefined symbol: vcsd_is_access_class_enabled')
+ANF: vhpi_get_cb_info('./simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('./simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('./simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('./simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('./simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('./simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('./simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('./simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('./simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('./simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('./simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('./simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('./simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('./simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('./simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('./simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('./simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('./simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: scsd_fgp_get_is_cpu_affinity_disabled('./simv: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
+ANF: vhdi_dt_get_type('./simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('./simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('./simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('./simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('./simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('./simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('./simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('./simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('./simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('./simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('./simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('./simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('./simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('./simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('./simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('./simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('./simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('./simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('./simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('./simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('./simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('./simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('./simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('./simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('./simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('./simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('./simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('./simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('./simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('./simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('./simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('./simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('./simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('./simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('./simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('./simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('./simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('./simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('./simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('./simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('./simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('./simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('./simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('./simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('./simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('./simv: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('./simv: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('./simv: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('./simv: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('./simv: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('./simv: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('./simv: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('./simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+VCS compile option:
+ option[0]: ./simv
+ option[1]: /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/bin/vcs1
+ option[2]: -Mcc=gcc
+ option[3]: -Mcplusplus=g++
+ option[4]: -Masflags=
+ option[5]: -Mcfl= -pipe -fPIC -O -I/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/include 
+ option[6]: -Mxllcflags=
+ option[7]: -Mxcflags= -pipe -fPIC -I/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/include
+ option[8]: -Mldflags= -rdynamic 
+ option[9]: -Mout=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv
+ option[10]: -Mamsrun=
+ option[11]: -Mvcsaceobjs=
+ option[12]: -Mobjects= /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvirsim.so /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/liberrorinf.so /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libsnpsmalloc.so /home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvfs.so 
+ option[13]: -Mexternalobj=
+ option[14]: -Msaverestoreobj=/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcs_save_restore_new.o
+ option[15]: -Mcrt0=
+ option[16]: -Mcrtn=
+ option[17]: -Mcsrc=
+ option[18]: -Mdir=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir
+ option[19]: -Msyslibs=/home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[20]: -full64
+ option[21]: -override_timescale=1ps/1ps
+ option[22]: -o
+ option[23]: /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv
+ option[24]: -debug_access+all
+ option[25]: +vpi
+ option[26]: +vcsd1
+ option[27]: +itf+/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcsdp_lite.tab
+ option[28]: -kdb
+ option[29]: -Xufe=2steps
+ option[30]: -top
+ option[31]: bsg_acm_cell_tb
+ option[32]: +sdf=max:bsg_acm_cell:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf
+ option[33]: +neg_tchk
+ option[34]: +sdfverbose
+ option[35]: -negdelay
+ option[36]: +define+FUNCTIONAL
+ option[37]: +define+UNIT_DELAY
+ option[38]: +warn=noSDFCOM_UHICD
+ option[39]: +warn=noSDFCOM_ANICD
+ option[40]: -picarchive
+ option[41]: -P
+ option[42]: /home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab
+ option[43]: -fsdb
+ option[44]: +sdf=max:bsg_acm_cell:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf
+ option[45]: -sverilog
+ option[46]: -gen_obj
+ option[47]: /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v
+ option[48]: v/bsg_acm_cell_tb.v
+ option[49]: /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v
+ option[50]: /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
+ option[51]: /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_reset_gen.v
+ option[52]: /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_node_trace_replay.v
+ option[53]: /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/trace_rom.v
+ option[54]: +incdir+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc
+ option[55]: build/tech-sky130-cache/primitives.v
+ option[56]: build/tech-sky130-cache/sky130_fd_sc_hd.v
+ option[57]: -load
+ option[58]: /home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+Chronologic Simulation VCS Release Q-2020.03-SP1_Full64
+Linux 3.10.0-1160.108.1.el7.x86_64 #1 SMP Thu Jan 25 16:17:31 UTC 2024 x86_64
+CPU cores: 8
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked		64 kbytes
+maxproc		4096
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+MYPYPATH=:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/jsonschema:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/python-jsonschema-objects:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-tech:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi
+XDG_SESSION_ID=1130
+TERM_PROGRAM=vscode
+HOSTNAME=linux-lab-049.ece.uw.edu
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+TERM=xterm-256color
+SHELL=/bin/bash
+HISTSIZE=1000
+MAKEFLAGS=
+SSH_CLIENT=10.102.103.44 54376 22
+TERM_PROGRAM_VERSION=1.89.1
+QTDIR=/usr/lib64/qt-3.3
+OLDPWD=/homes/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell
+MSI2LMP_LIBRARY=/usr/share/lammps/frc_files
+QTINC=/usr/lib64/qt-3.3/include
+LAMMPS_POTENTIALS=/usr/share/lammps/potentials
+QT_GRAPHICSSYSTEM_CHECKED=1
+HAMMER_HOME=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer
+USER=wuc29
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+HAMMER_VLSI=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi
+MAKELEVEL=1
+MFLAGS=
+MAIL=/var/spool/mail/wuc29
+PATH=/home/wuc29/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/remote-cli:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/homes/wuc29/.local/bin:/homes/wuc29/bin:/homes/wuc29/VSCode-linux-x64/bin :/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-shell
+PWD=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir
+LANG=en_US.UTF-8
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+SSL_CERT_DIR=/etc/pki/tls/certs
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+KRB5CCNAME=KEYRING:persistent:823162
+HISTCONTROL=ignoredups
+SHLVL=6
+HOME=/homes/wuc29
+VSCODE_GIT_ASKPASS_MAIN=/home/wuc29/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass-main.js
+PYTHONPATH=:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/jsonschema:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/python-jsonschema-objects:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-tech:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi
+LOGNAME=wuc29
+CVS_RSH=ssh
+QTLIB=/usr/lib64/qt-3.3/lib
+VSCODE_GIT_IPC_HANDLE=/run/user/823162/vscode-git-39d7bc38ee.sock
+SSH_CONNECTION=10.102.103.44 54376 10.159.224.49 22
+XDG_DATA_DIRS=/homes/wuc29/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+MODULESHOME=/usr/share/Modules
+VSCODE_IPC_HOOK_CLI=/run/user/823162/vscode-ipc-fb209513-cf24-4309-9c1e-4b532f7a8d3f.sock
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+BROWSER=/home/wuc29/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/helpers/browser.sh
+GIT_ASKPASS=/home/wuc29/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass.sh
+VSCODE_GIT_ASKPASS_NODE=/home/wuc29/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/node
+XDG_RUNTIME_DIR=/run/user/823162
+COLORTERM=truecolor
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+_=./simv
+VCS_HEAP_EXEC=true
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_STACK_EXEC=true
+VCS_EXEC_DONE=1
+SNPSLMD_LICENSE_FILE=27008@synopsysls.s.uw.edu
+VCS_HOME=/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1
+LC_ALL=C
+VERDI_HOME=/home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8
+DVE=/home/projects/ee477.2023wtr/cad/synopsys/vcs/Q-2020.03-SP1/gui/dve
+SPECMAN_OUTPUT_TO_TTY=1
+FLEXLM_BORROWFILE=/homes/wuc29/.linux-lab-049.ece.uw.edu-borrow.txt
+Runtime command line arguments:
+argv[0]=./simv
+231 profile - 100
+          CPU/Mem usage: 0.070 sys,  0.320 user,  277.56M mem
+232 Elapsed time:    0:00:01    Mon Jun  3 08:07:35 2024
+233 pliAppInit
+234 FSDB_GATE is set.
+235 FSDB_RTL is set.
+236 FSDB_RTL is set.
+237 FSDB_FIELDTYPE is set.
+238 Enable Parallel Dumping.
+239 pliAppMiscSet: New Sim Round
+240 pliEntryInit
+241 LIBSSCORE=found /home/projects/ee477.2023wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/lib/LINUXAMD64/libsscore_vcs202003.so through $NOVAS_HOME setting.
+242 FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
+243 (C) 1996 - 2021 by Synopsys, Inc.
+244 sps_call_fsdbDumpfile_main at 0 : v/bsg_acm_cell_tb.v(11)
+245 argv[0]: (waveform.fsdb)
+246 *Verdi* : Create FSDB file 'waveform.fsdb'
+247 compile option from '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv.daidir/vcs_rebuild'.
+248   "vcs '-full64' '-override_timescale=1ps/1ps' '-sverilog' '-Mdir=/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir' '-o' '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/simv' '-debug_access+all' '-kdb' '-top' 'bsg_acm_cell_tb' '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v' 'v/bsg_acm_cell_tb.v' '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_defines.v' '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v' '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_test/bsg_nonsynth_reset_gen.v' '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_fsb/bsg_fsb_node_trace_replay.v' '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/sim-syn-rundir/trace_rom.v' '+incdir+/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc' 'build/tech-sky130-cache/primitives.v' 'build/tech-sky130-cache/sky130_fd_sc_hd.v' '-sdf' 'max:bsg_acm_cell:/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf' '+neg_tchk' '+sdfverbose' '-negdelay' '+define+FUNCTIONAL' '+define+UNIT_DELAY' '+warn=noSDFCOM_UHICD' '+warn=noSDFCOM_ANICD' 2>&1"
+249 DVDI_is_vir_unload_enabled is enable
+250 FSDB_VCS_ENABLE_NATIVE_VC is enable
+251 sps_call_fsdbDumpvars_vd_main at 0 : v/bsg_acm_cell_tb.v(12)
+252 [spi_vcs_vd_ppi_create_root]: no upf option
+253 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+254 Power dumping is enabled and VIR_REDUCTION may not work.
+255 *Verdi* : Begin traversing the scopes, layer (0).
+256 *Verdi* : End of traversing.
+257 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.080 sys,  0.330 user,  376.96M mem
+                   incr: 0.000 sys,  0.010 user,  7.68M mem
+                   accu: 0.000 sys,  0.010 user,  7.68M mem
+              accu incr: 0.000 sys,  0.010 user,  7.68M mem
+
+          Count usage: 82 var,  90 idcode,  45 callback
+                 incr: 82 var,  90 idcode,  45 callback
+                 accu: 82 var,  90 idcode,  45 callback
+            accu incr: 82 var,  90 idcode,  45 callback
+258 Elapsed time:    0:00:01    Mon Jun  3 08:07:35 2024
+259 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.080 sys,  0.330 user,  378.15M mem
+                   incr: 0.000 sys,  0.000 user,  1.19M mem
+                   accu: 0.000 sys,  0.010 user,  8.87M mem
+              accu incr: 0.000 sys,  0.000 user,  1.19M mem
+
+          Count usage: 82 var,  90 idcode,  45 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 82 var,  90 idcode,  45 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+260 Elapsed time:    0:00:01    Mon Jun  3 08:07:35 2024
+261 End of simulation at 705000
+262 Elapsed time:    0:00:01    Mon Jun  3 08:07:35 2024
+263 Begin FSDB profile info:
+264 FSDB Writer : bc1(896) bcn(128) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.008394) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+265 End FSDB profile info
+266 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+267                      - BlockUsed:1 Acquire:1546 BufferUsed:18744
+268                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:0
+269                      - MainProducerTime:0.421598579 TotalConsumerTime:0.000000000
+270                      - ElapsedTime:0.171734000
+271 Producer   0 profile - BlockUsed:1 Acquire:1546 BufferUsed:18744
+272 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
+273                      - BlockUsed:1 Acquire:1546 BufferUsed:18744
+274 SimExit
+275 Elapsed time:    0:00:02    Mon Jun  3 08:07:36 2024
+276 Sim process exit

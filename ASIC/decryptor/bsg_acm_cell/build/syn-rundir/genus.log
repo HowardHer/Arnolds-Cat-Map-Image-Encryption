@@ -1,0 +1,1841 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[08:04:49.233929] Configured Lic search path (20.02-s004): 27006@cadencels.s.uw.edu
+
+Version: 21.12-s068_1, built Fri Mar 04 06:12:46 PST 2022
+Options: -files /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/syn.tcl -no_gui 
+Date:    Mon Jun 03 08:04:49 2024
+Host:    linux-lab-049.ece.uw.edu (x86_64 w/Linux 3.10.0-1160.108.1.el7.x86_64) (8cores*8cpus*1physical cpu*Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz 12288KB) (16090180KB)
+PID:     21087
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+
+[08:04:49.359474] Periodic Lic check successful
+[08:04:49.359475] Feature usage summary:
+[08:04:49.359480] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (12 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/syn.tcl
+#@ Begin verbose source /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/syn.tcl
+@file(syn.tcl) 1: puts "set_db hdl_error_on_blackbox true" 
+set_db hdl_error_on_blackbox true
+@file(syn.tcl) 2: set_db hdl_error_on_blackbox true
+  Setting attribute of root '/': 'hdl_error_on_blackbox' = true
+@file(syn.tcl) 3: puts "set_db max_cpus_per_server 8" 
+set_db max_cpus_per_server 8
+@file(syn.tcl) 4: set_db max_cpus_per_server 8
+  Setting attribute of root '/': 'max_cpus_per_server' = 8
+@file(syn.tcl) 5: puts "set_db hdl_auto_sync_set_reset true" 
+set_db hdl_auto_sync_set_reset true
+@file(syn.tcl) 6: set_db hdl_auto_sync_set_reset true
+  Setting attribute of root '/': 'hdl_auto_sync_set_reset' = true
+@file(syn.tcl) 7: puts "set_db hdl_unconnected_value none" 
+set_db hdl_unconnected_value none
+@file(syn.tcl) 8: set_db hdl_unconnected_value none
+  Setting attribute of root '/': 'hdl_unconnected_value' = none
+@file(syn.tcl) 9: puts "set_db lp_clock_gating_infer_enable  true" 
+set_db lp_clock_gating_infer_enable  true
+@file(syn.tcl) 10: set_db lp_clock_gating_infer_enable  true
+  Setting attribute of root '/': 'lp_clock_gating_infer_enable' = true
+@file(syn.tcl) 11: puts "set_db lp_clock_gating_prefix  {CLKGATE}" 
+set_db lp_clock_gating_prefix  {CLKGATE}
+@file(syn.tcl) 12: set_db lp_clock_gating_prefix  {CLKGATE}
+  Setting attribute of root '/': 'lp_clock_gating_prefix' = CLKGATE
+@file(syn.tcl) 13: puts "set_db lp_insert_clock_gating  true" 
+set_db lp_insert_clock_gating  true
+@file(syn.tcl) 14: set_db lp_insert_clock_gating  true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(syn.tcl) 15: puts "set_db lp_clock_gating_hierarchical true" 
+set_db lp_clock_gating_hierarchical true
+@file(syn.tcl) 16: set_db lp_clock_gating_hierarchical true
+Warning : This attribute will be obsolete in a next major release. [TUI-32]
+        : attribute: 'lp_clock_gating_hierarchical', object type: 'root'
+        : Hierarchical clock-gating is no longer supported. When you use the lp_clock_gating_hierarchical attribute in this release, the tool will ignore the attribute.
+  Setting attribute of root '/': 'lp_clock_gating_hierarchical' = true
+@file(syn.tcl) 17: puts "set_db lp_insert_clock_gating_incremental true" 
+set_db lp_insert_clock_gating_incremental true
+@file(syn.tcl) 18: set_db lp_insert_clock_gating_incremental true
+Warning : This attribute will be obsolete in a next major release. [TUI-32]
+        : attribute: 'lp_insert_clock_gating_incremental', object type: 'root'
+        : The attribute 'lp_insert_clock_gating_incremental' is obsoleted.
+  Setting attribute of root '/': 'lp_insert_clock_gating_incremental' = true
+@file(syn.tcl) 19: puts "set_db lp_clock_gating_register_aware true" 
+set_db lp_clock_gating_register_aware true
+@file(syn.tcl) 20: set_db lp_clock_gating_register_aware true
+  Setting attribute of root '/': 'lp_clock_gating_register_aware' = true
+@file(syn.tcl) 21: puts "read_mmmc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/mmmc.tcl" 
+read_mmmc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/mmmc.tcl
+@file(syn.tcl) 22: read_mmmc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/mmmc.tcl
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+Sourcing '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/mmmc.tcl' (Mon Jun 03 08:05:01 UTC 2024)...
+#@ Begin verbose source /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/mmmc.tcl
+@file(mmmc.tcl) 1: puts "create_constraint_mode -name my_constraint_mode -sdc_files [list /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/clock_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/pin_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/cfg/constraints.tcl]" 
+create_constraint_mode -name my_constraint_mode -sdc_files /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/clock_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/pin_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/cfg/constraints.tcl
+@file(mmmc.tcl) 2: create_constraint_mode -name my_constraint_mode -sdc_files [list /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/clock_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/pin_constraints_fragment.sdc /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/cfg/constraints.tcl]
+@file(mmmc.tcl) 3: puts "create_library_set -name ss_100C_1v60.setup_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib]" 
+create_library_set -name ss_100C_1v60.setup_set -timing /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib
+@file(mmmc.tcl) 4: create_library_set -name ss_100C_1v60.setup_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib]
+@file(mmmc.tcl) 5: puts "create_timing_condition -name ss_100C_1v60.setup_cond -library_sets [list ss_100C_1v60.setup_set]" 
+create_timing_condition -name ss_100C_1v60.setup_cond -library_sets ss_100C_1v60.setup_set
+@file(mmmc.tcl) 6: create_timing_condition -name ss_100C_1v60.setup_cond -library_sets [list ss_100C_1v60.setup_set]
+@file(mmmc.tcl) 7: puts "create_rc_corner -name ss_100C_1v60.setup_rc -temperature 100.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl" 
+create_rc_corner -name ss_100C_1v60.setup_rc -temperature 100.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 8: create_rc_corner -name ss_100C_1v60.setup_rc -temperature 100.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 9: puts "create_delay_corner -name ss_100C_1v60.setup_delay -timing_condition ss_100C_1v60.setup_cond -rc_corner ss_100C_1v60.setup_rc" 
+create_delay_corner -name ss_100C_1v60.setup_delay -timing_condition ss_100C_1v60.setup_cond -rc_corner ss_100C_1v60.setup_rc
+@file(mmmc.tcl) 10: create_delay_corner -name ss_100C_1v60.setup_delay -timing_condition ss_100C_1v60.setup_cond -rc_corner ss_100C_1v60.setup_rc
+@file(mmmc.tcl) 11: puts "create_analysis_view -name ss_100C_1v60.setup_view -delay_corner ss_100C_1v60.setup_delay -constraint_mode my_constraint_mode" 
+create_analysis_view -name ss_100C_1v60.setup_view -delay_corner ss_100C_1v60.setup_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 12: create_analysis_view -name ss_100C_1v60.setup_view -delay_corner ss_100C_1v60.setup_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 13: puts "create_library_set -name ff_n40C_1v95.hold_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib]" 
+create_library_set -name ff_n40C_1v95.hold_set -timing /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib
+@file(mmmc.tcl) 14: create_library_set -name ff_n40C_1v95.hold_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib]
+@file(mmmc.tcl) 15: puts "create_timing_condition -name ff_n40C_1v95.hold_cond -library_sets [list ff_n40C_1v95.hold_set]" 
+create_timing_condition -name ff_n40C_1v95.hold_cond -library_sets ff_n40C_1v95.hold_set
+@file(mmmc.tcl) 16: create_timing_condition -name ff_n40C_1v95.hold_cond -library_sets [list ff_n40C_1v95.hold_set]
+@file(mmmc.tcl) 17: puts "create_rc_corner -name ff_n40C_1v95.hold_rc -temperature -40.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl" 
+create_rc_corner -name ff_n40C_1v95.hold_rc -temperature -40.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 18: create_rc_corner -name ff_n40C_1v95.hold_rc -temperature -40.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 19: puts "create_delay_corner -name ff_n40C_1v95.hold_delay -timing_condition ff_n40C_1v95.hold_cond -rc_corner ff_n40C_1v95.hold_rc" 
+create_delay_corner -name ff_n40C_1v95.hold_delay -timing_condition ff_n40C_1v95.hold_cond -rc_corner ff_n40C_1v95.hold_rc
+@file(mmmc.tcl) 20: create_delay_corner -name ff_n40C_1v95.hold_delay -timing_condition ff_n40C_1v95.hold_cond -rc_corner ff_n40C_1v95.hold_rc
+@file(mmmc.tcl) 21: puts "create_analysis_view -name ff_n40C_1v95.hold_view -delay_corner ff_n40C_1v95.hold_delay -constraint_mode my_constraint_mode" 
+create_analysis_view -name ff_n40C_1v95.hold_view -delay_corner ff_n40C_1v95.hold_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 22: create_analysis_view -name ff_n40C_1v95.hold_view -delay_corner ff_n40C_1v95.hold_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 23: puts "create_library_set -name tt_025C_1v80.extra_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib]" 
+create_library_set -name tt_025C_1v80.extra_set -timing /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+@file(mmmc.tcl) 24: create_library_set -name tt_025C_1v80.extra_set -timing [list /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib]
+@file(mmmc.tcl) 25: puts "create_timing_condition -name tt_025C_1v80.extra_cond -library_sets [list tt_025C_1v80.extra_set]" 
+create_timing_condition -name tt_025C_1v80.extra_cond -library_sets tt_025C_1v80.extra_set
+@file(mmmc.tcl) 26: create_timing_condition -name tt_025C_1v80.extra_cond -library_sets [list tt_025C_1v80.extra_set]
+@file(mmmc.tcl) 27: puts "create_rc_corner -name tt_025C_1v80.extra_rc -temperature 25.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl" 
+create_rc_corner -name tt_025C_1v80.extra_rc -temperature 25.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 28: create_rc_corner -name tt_025C_1v80.extra_rc -temperature 25.0  -cap_table /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/ee477-hammer-cad/hammer/src/hammer-vlsi/technology/sky130/extra/sky130.captbl
+@file(mmmc.tcl) 29: puts "create_delay_corner -name tt_025C_1v80.extra_delay -timing_condition tt_025C_1v80.extra_cond -rc_corner tt_025C_1v80.extra_rc" 
+create_delay_corner -name tt_025C_1v80.extra_delay -timing_condition tt_025C_1v80.extra_cond -rc_corner tt_025C_1v80.extra_rc
+@file(mmmc.tcl) 30: create_delay_corner -name tt_025C_1v80.extra_delay -timing_condition tt_025C_1v80.extra_cond -rc_corner tt_025C_1v80.extra_rc
+@file(mmmc.tcl) 31: puts "create_analysis_view -name tt_025C_1v80.extra_view -delay_corner tt_025C_1v80.extra_delay -constraint_mode my_constraint_mode" 
+create_analysis_view -name tt_025C_1v80.extra_view -delay_corner tt_025C_1v80.extra_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 32: create_analysis_view -name tt_025C_1v80.extra_view -delay_corner tt_025C_1v80.extra_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 33: puts "set_analysis_view -setup { ss_100C_1v60.setup_view } -hold { ff_n40C_1v95.hold_view tt_025C_1v80.extra_view }" 
+set_analysis_view -setup { ss_100C_1v60.setup_view } -hold { ff_n40C_1v95.hold_view tt_025C_1v80.extra_view }
+@file(mmmc.tcl) 34: set_analysis_view -setup { ss_100C_1v60.setup_view } -hold { ff_n40C_1v95.hold_view tt_025C_1v80.extra_view }
+
+Threads Configured:3
+
+  Message Summary for Library sky130_fd_sc_hd__ss_100C_1v60.lib:
+  **************************************************************
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82160)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82294)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82428)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82705)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82839)
+Warning : Missing pg_pin group in the library. [LBR-702]
+        : No pg_pin with name 'VNB' has been read in the cell 'sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, Line 82973)
+  Missing pg_pin group in the library. [LBR-702]: 6
+  An unsupported construct was detected in this library. [LBR-40]: 12
+  **************************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.600000, 100.000000) in library 'sky130_fd_sc_hd__ss_100C_1v60.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_12' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_12' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__decap_8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__diode_2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__diode_2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_bleeder_1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_bleeder_1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_12' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_12' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'sky130_fd_sc_hd__lpflow_decapkapwr_4' must have an output pin.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-9'.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is 'library_domain:ss_100C_1v60.setup_cond'.
+#@ End verbose source /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/mmmc.tcl
+@file(syn.tcl) 23: puts "read_physical -lef { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef }" 
+read_physical -lef { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef }
+@file(syn.tcl) 24: read_physical -lef { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef /home/projects/ee477.2023wtr/cad/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef }
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR_R' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR_M' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR_MR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'L1M1_PR_C' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR_R' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR_M' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR_MR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M1M2_PR_C' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR_R' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR_M' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR_MR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2M3_PR_C' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR_R' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR_M' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR_MR' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3M4_PR_C' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-129'.
+Warning : Multiple ports are found on a pin without MUSTJOINALLPORTS in the pin property in the LEF file. [PHYS-2381]
+        : Multiple ports are found on pin 'X' on cell 'sky130_fd_sc_hd__probe_p_8' without MUSTJOINALLPORTS in the pin property.
+        : This means that only one port would be connected, which may not be the expected behavior. Should consider adding MUSTJOINALLPORTS property.
+Warning : Multiple ports are found on a pin without MUSTJOINALLPORTS in the pin property in the LEF file. [PHYS-2381]
+        : Multiple ports are found on pin 'X' on cell 'sky130_fd_sc_hd__probec_p_8' without MUSTJOINALLPORTS in the pin property.
+
+  According to lef_library, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'met2' and 'met5' is too large.
+        : Check the consistency of the parameters, and see if you can ignore this message or you're using different LEF file with wrong parameters.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.0285, 12.8) of 'RPERSQ' for layers 'met5' and 'li1' is too large.
+Warning : The value of the wire parameter is too big. [PHYS-13]
+        : The 'RPERSQ: 12.8' of layer 'li1' is much bigger than others.
+        : Check the consistency of the specified wire parameter.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'MINSPACING' for layers 'met2' and 'met5' is too large.
+  Library has 335 usable logic and 62 usable sequential lib-cells.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_ef_sc_hd__decap_12 cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_ef_sc_hd__fakediode_2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_ef_sc_hd__fill_8 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_ef_sc_hd__fill_12 cannot be found in library.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2o_1' is marked as GROUND in LEF file.
+        : Overriding lib value with LEF value. To use .lib as golden do: '::legacy::set_attribute use_power_ground_pin_from_lef false'.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2o_1' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2o_2' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2o_2' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2o_4' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2o_4' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2oi_1' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2oi_1' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2oi_2' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2oi_2' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a2bb2oi_4' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a2bb2oi_4' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a21bo_1' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a21bo_1' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a21bo_2' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a21bo_2' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a21bo_4' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a21bo_4' is marked as POWER in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VNB' of library cell 'sky130_fd_sc_hd__a21boi_0' is marked as GROUND in LEF file.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VPB' of library cell 'sky130_fd_sc_hd__a21boi_0' is marked as POWER in LEF file.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-128'.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__fill_1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__fill_2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__fill_4 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__fill_8 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tap_1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tap_2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tapvgnd2_1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tapvgnd_1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell sky130_fd_sc_hd__tapvpwrvgnd_1 cannot be found in library.
+@file(syn.tcl) 25: puts "read_hdl -sv { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/v/bsg_acm_cell.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v }" 
+read_hdl -sv { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/v/bsg_acm_cell.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v }
+@file(syn.tcl) 26: read_hdl -sv { /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/v/bsg_acm_cell.v /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/basejump_stl/bsg_misc/bsg_popcount.v }
+@file(syn.tcl) 27: puts "elaborate bsg_acm_cell" 
+elaborate bsg_acm_cell
+@file(syn.tcl) 28: elaborate bsg_acm_cell
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-81'.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'bsg_acm_cell' from file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/v/bsg_acm_cell.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'bsg_acm_cell'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: bsg_acm_cell, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: bsg_acm_cell, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(syn.tcl) 29: puts "init_design -top bsg_acm_cell" 
+init_design -top bsg_acm_cell
+@file(syn.tcl) 30: init_design -top bsg_acm_cell
+Started checking and loading power intent for design bsg_acm_cell...
+====================================================================
+No power intent for design 'bsg_acm_cell'.
+Completed checking and loading power intent for design bsg_acm_cell (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+=========================================================================================================================
+#
+# Reading SDC /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/clock_constraints_fragment.sdc for view:ss_100C_1v60.setup_view (constraint_mode:my_constraint_mode)
+#
+Error   : A required object parameter could not be found. [TUI-61] [create_clock]
+        : An object of type 'port|pin|hpin' named 'DEFAULT_CLOCK' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '1' of the SDC file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/clock_constraints_fragment.sdc': create_clock DEFAULT_CLOCK -name DEFAULT_CLOCK -period 0.0.
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Warning : Unsupported SDC command option. [SDC-201] [set_clock_groups]
+        : The clock 'DEFAULT_CLOCK' specified  in 'set_clock_groups' is not a valid clock object for mode 'ss_100C_1v60.setup_view'.
+        : The current version does not support this SDC command option.  However, future versions may be enhanced to support this option.
+Error   : Invalid SDC command option combination. [SDC-204] [set_clock_groups]
+        : All clocks passed to -group option are invalid in 'set_clock_groups'.
+        : This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '2' of the SDC file '/home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/clock_constraints_fragment.sdc': set_clock_groups -asynchronous  -group { DEFAULT_CLOCK }.
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      0 , failed      1 (runtime  0.00)
+ "set_clock_groups"         - successful      0 , failed      1 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 2
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/pin_constraints_fragment.sdc for view:ss_100C_1v60.setup_view (constraint_mode:my_constraint_mode)
+#
+Statistics for commands executed by read_sdc:
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/cfg/constraints.tcl for view:ss_100C_1v60.setup_view (constraint_mode:my_constraint_mode)
+#
+Warning : Unsupported SDC command option. [SDC-201] [set_input_delay]
+        : The set_input_delay command is not supported on ports which have a clock already defined 'port:bsg_acm_cell/clk_i'.
+Statistics for commands executed by read_sdc:
+ "all_inputs"               - successful      2 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      2 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      5 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      2 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      2 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+Warning : No nominal temperature specified in cap table file. [PHYS-26]
+        : Room temperature will be used for resistance calculation.
+        : Nominal temperature is used for calculating the temperature dependent resistance.
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'M3' and 'M6' is too large.
+Warning : No nominal temperature specified in cap table file. [PHYS-26]
+        : Room temperature will be used for resistance calculation.
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'M3' and 'M6' is too large.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'li1' in lef is '0.17', minimum width of layer 'M1' in cap table is '0.14'.
+        : Compare the layer MinWidth of the cap_table_file with the MinWidth (WIDTH) of the corresponding layer in LEF. Set the attribute 'shrink_factor' to adjust the MinWidth layer value in the captable file
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'met2' in lef is '0.14', minimum width of layer 'M3' in cap table is '0.3'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'met4' in lef is '0.3', minimum width of layer 'M5' in cap table is '0.8'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'met5' in lef is '1.6', minimum width of layer 'M6' in cap table is '10'.
+Warning : No nominal temperature specified in cap table file. [PHYS-26]
+        : Room temperature will be used for resistance calculation.
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'M3' and 'M6' is too large.
+Warning : No nominal temperature specified in cap table file. [PHYS-26]
+        : Room temperature will be used for resistance calculation.
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'WIDTH' for layers 'M3' and 'M6' is too large.
+  Setting attribute of root '/': 'read_qrc_tech_file_rc_corner' = true
+@file(syn.tcl) 31: puts "set_db root: .auto_ungroup none" 
+set_db root: .auto_ungroup none
+@file(syn.tcl) 32: set_db root: .auto_ungroup none
+  Setting attribute of root '/': 'auto_ungroup' = none
+@file(syn.tcl) 33: puts "set_units -capacitance 1.0pF" 
+set_units -capacitance 1.0pF
+@file(syn.tcl) 34: set_units -capacitance 1.0pF
+@file(syn.tcl) 35: puts "set_load_unit -picofarads 1" 
+set_load_unit -picofarads 1
+@file(syn.tcl) 36: set_load_unit -picofarads 1
+@file(syn.tcl) 37: puts "set_units -time 1.0ns" 
+set_units -time 1.0ns
+@file(syn.tcl) 38: set_units -time 1.0ns
+@file(syn.tcl) 40: puts "set_dont_use \[get_db lib_cells */*sdf*\]"
+set_dont_use [get_db lib_cells */*sdf*]
+@file(syn.tcl) 41: if { [get_db lib_cells */*sdf*] ne "" } {
+    set_dont_use [get_db lib_cells */*sdf*]
+} else {
+    puts "WARNING: cell */*sdf* was not found for set_dont_use"
+}
+@file(syn.tcl) 48: puts "set_dont_use \[get_db lib_cells */sky130_fd_sc_hd__probe_p_*\]"
+set_dont_use [get_db lib_cells */sky130_fd_sc_hd__probe_p_*]
+@file(syn.tcl) 49: if { [get_db lib_cells */sky130_fd_sc_hd__probe_p_*] ne "" } {
+    set_dont_use [get_db lib_cells */sky130_fd_sc_hd__probe_p_*]
+} else {
+    puts "WARNING: cell */sky130_fd_sc_hd__probe_p_* was not found for set_dont_use"
+}
+@file(syn.tcl) 56: puts "set_dont_use \[get_db lib_cells */sky130_fd_sc_hd__probec_p_*\]"
+set_dont_use [get_db lib_cells */sky130_fd_sc_hd__probec_p_*]
+@file(syn.tcl) 57: if { [get_db lib_cells */sky130_fd_sc_hd__probec_p_*] ne "" } {
+    set_dont_use [get_db lib_cells */sky130_fd_sc_hd__probec_p_*]
+} else {
+    puts "WARNING: cell */sky130_fd_sc_hd__probec_p_* was not found for set_dont_use"
+}
+@file(syn.tcl) 63: puts "write_db -to_file pre_genus_syn_with_preserve" 
+write_db -to_file pre_genus_syn_with_preserve
+@file(syn.tcl) 64: write_db -to_file pre_genus_syn_with_preserve
+  Libraries have 333 usable logic and 43 usable sequential lib-cells.
+Finished exporting design database to file 'pre_genus_syn_with_preserve' for 'bsg_acm_cell' (command execution time mm:ss cpu = 00:00, real = 00:00).
+@file(syn.tcl) 65: puts "syn_generic" 
+syn_generic
+@file(syn.tcl) 66: syn_generic
+##Generic Timing Info for library domain: ss_100C_1v60.setup_cond typical gate delay: 291.0 ps std_slew: 35.6 ps std_load: 5.4 fF
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: bsg_acm_cell, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.255
+Via Resistance      : 4.339 ohm (from cap_table_file)
+Site size           : 3.180 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              V         0.00        0.000345  
+M2              H         1.00        0.000339  
+M3              V         1.00        0.000359  
+M4              H         1.00        0.000346  
+M5              V         1.00        0.000201  
+M6              H         1.00        0.000150  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              V         0.00         0.911886  
+M2              H         1.00         1.100879  
+M3              V         1.00         0.420464  
+M4              H         1.00         0.196217  
+M5              V         1.00         0.119537  
+M6              H         1.00         0.004127  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+li1             V         0.00         0.170000  
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'bsg_acm_cell' to generic gates using 'medium' effort.
+PBS_Generic-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+TNS Restructuring config: no_value at stage: generic applied.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: bsg_acm_cell, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux data reorder optimization [v1.0] (stage: post_to_gen_setup, startdef: bsg_acm_cell, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.255
+Via Resistance      : 4.339 ohm (from cap_table_file)
+Site size           : 3.180 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              V         0.00        0.000345  
+M2              H         1.00        0.000339  
+M3              V         1.00        0.000359  
+M4              H         1.00        0.000346  
+M5              V         1.00        0.000201  
+M6              H         1.00        0.000150  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              V         0.00         0.911886  
+M2              H         1.00         1.100879  
+M3              V         1.00         0.420464  
+M4              H         1.00         0.196217  
+M5              V         1.00         0.119537  
+M6              H         1.00         0.004127  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+li1             V         0.00         0.170000  
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------
+| Trick | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------
+--------------------------------------------
+Starting infer macro optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed infer macro optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting decode mux sandwich optimization [v2.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed decode mux sandwich optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting decode mux optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed decode mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting chop wide muxes [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed chop wide muxes (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting priority mux optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed priority mux optimization (accepts: 0, rejects: 0, runtime: 0.003s)
+Starting constant-data mux optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed constant-data mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting chain-to-tree inequality transform [v2.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting common select mux optimization [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed common select mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting identity transform [v3.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed identity transform (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting reduce operator chain [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed reduce operator chain (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting optimize datapath elements [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed optimize datapath elements (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting datapath recasting [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed datapath recasting (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: pre_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------
+| Trick       | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------
+| ume_runtime |       0 |       0 |         0.00 | 
+--------------------------------------------------
+Number of big hc bmuxes before = 0
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : Pre-processing optimizations applied to datapath logic in 'bsg_acm_cell':
+          live_trim(1) 
+Info    : Optimizing datapath logic. [DPOPT-1]
+        : Optimizing datapath logic in 'bsg_acm_cell'.
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_2_0'
+CSAGen Prep Share:0 Re-Write:0 Speculation: 0
+CDN_DP_region_2_0 level = 0 loads = 0 drivers = 0
+MaxCSA: Successfully built Maximal CSA Expression Expr0
+CDN_DP_region_2_0_c0 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = slow         worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ skipped
+CDN_DP_region_2_0_c1 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = fast         worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_2_0_c2 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = very_slow    worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_2_0_c3 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = very_fast    worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_2_0_c4 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = very_fast    worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_2_0_c5 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = very_fast    worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_2_0_c6 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = very_fast    worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_2_0_c7 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = very_fast    worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+Best config: CDN_DP_region_2_0_c7 in bsg_popcount_width_p8: area: 119139471 ,dp = 1 mux = 0 sg = very_fast    worst_clk_period: -1.0000 
+    wns: 0  norm_wns:  -1.0000 
+    fail_endp: -1 
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000 
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+  Smallest config area : 119139471.  Fastest config wns;  0
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>Summary table of configs (Best config is CDN_DP_region_2_0_c7)
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>                     0                  1                  2                  3                  4                  5                  6                  7            
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>           Area        119139471          119139471          119139471          119139471          119139471          119139471          119139471          119139471  
+##>            WNS         +2370.60           +2370.60           +2370.60           +2370.60           +2370.60           +2370.60           +2370.60           +2370.60  
+##>            TNS                0                  0                  0                  0                  0                  0                  0                  0  
+##>    Num Rewrite                0                  0                  0                  0                  0                  0                  0                  0  
+##>     Num Factor                0                  0                  0                  0                  0                  0                  0                  0  
+##>      Num Share                0                  0                  0                  0                  0                  0                  0                  0  
+##>   Num CmultCse                0                  0                  0                  0                  0                  0                  0                  0  
+##>   Num Downsize                0                  0                  0                  0                  0                  0                  0                  0  
+##>  Num Speculate                0                  0                  0                  0                  0                  0                  0                  0  
+##>     Runtime(s)                0                  0                  0                  0                  0                  0                  0                  0  
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>
+##>
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>Optimization Step DEBUG Table for config CDN_DP_region_2_0_c7
+##>
+##>                          Step                        Area   ( % Chg)        WNS (Change)        TNS (Change)          Runtime (s)        Comment                   
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>EquationExtraction              START              119139471 (      )     2370.60 (        )             0 (        )              
+##> rewrite                        START              269166953 (+125.93)     2239.80 ( -130.80)             0 (       0)              (a,ar) Expr0_from --> Expr0_to
+##>                                  END              247104088 ( -8.20)     2239.80 (   +0.00)             0 (       0)           0  
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>createMaxCarrySave              START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##> datapath_rewrite_one_def       START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##> csa_opto                       START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>canonicalize_by_names           START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>datapath_rewrite_post_csa_one_  START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>datapath_csa_factoring_one_gde  START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>dpopt_share_one_def             START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>datapath_rewrite_post_share     START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>dp_combine_const_mult_with_com  START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>dp_operator_level_decompositio  START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>selective_flatten_dp_config     START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>createMaxCarrySave              START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##> datapath_rewrite_one_def       START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>  fast_cse_elim                 START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>  fast_cse_elim                 START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##> csa_opto                       START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>context_based_simplify          START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>group_csa_final_adder_dp        START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>dpopt_flatten_critical_muxes_i  START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>create_score                    START              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)              
+##>                                  END              119139471 ( +0.00)     2370.60 (   +0.00)             0 (       0)           0  
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Committed config: CDN_DP_region_2_0_c7
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 7 for module 'CDN_DP_region_2_0'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Done optimizing datapath logic. [DPOPT-2]
+        : Done optimizing datapath logic in 'bsg_acm_cell'.
+Number of big hc bmuxes after = 0
+Starting logic reduction [v1.0] (stage: post_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed logic reduction (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux data reorder optimization [v1.0] (stage: post_rtlopt, startdef: bsg_acm_cell, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux speculation [v1.0] (stage: post_muxopt, startdef: bsg_acm_cell, recur: true)
+Starting speculation optimization
+Completed speculation optimization (accepts:0)
+Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.003s)
+==================================
+Stage : to_generic 
+==================================
+  =================
+   Message Summary
+  =================
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|    Id     |  Sev   |Count |                                                                                  Message Text                                                                                   |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| CDFG-372  |Info    |    1 |Bitwidth mismatch in assignment.                                                                                                                                                 |
+|           |        |      |Review and make sure the mismatch is unintentional. Genus can possibly issue bitwidth mismatch warning for explicit assignments present in RTL as-well-as for implicit           |
+|           |        |      | assignments inferred by the tool. For example, in case of enum declaration without value, the tool will implicitly assign value to the enum variables. It also issues the       |
+|           |        |      | warning for any bitwidth mismatch that appears in this implicit assignment.                                                                                                     |
+| CWD-19    |Info    |    2 |An implementation was inferred.                                                                                                                                                  |
+| DPOPT-1   |Info    |    1 |Optimizing datapath logic.                                                                                                                                                       |
+| DPOPT-2   |Info    |    1 |Done optimizing datapath logic.                                                                                                                                                  |
+| DPOPT-3   |Info    |    1 |Implementing datapath configurations.                                                                                                                                            |
+| DPOPT-4   |Info    |    1 |Done implementing datapath configurations.                                                                                                                                       |
+| DPOPT-6   |Info    |    1 |Pre-processed datapath logic.                                                                                                                                                    |
+| ELAB-1    |Info    |    1 |Elaborating Design.                                                                                                                                                              |
+| ELAB-2    |Info    |    2 |Elaborating Subdesign.                                                                                                                                                           |
+| ELAB-3    |Info    |    1 |Done Elaborating Design.                                                                                                                                                         |
+| LBR-9     |Warning |   24 |Library cell has no output pins defined.                                                                                                                                         |
+|           |        |      |Add the missing output pin(s)                                                                                                                                                    |
+|           |        |      | , then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is |
+|           |        |      | no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and   |
+|           |        |      | it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note:   |
+|           |        |      | The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin)              |
+|           |        |      | of the cell, to use it for mapping. The pg_pin will not have any function defined.                                                                                              |
+| LBR-40    |Info    |   12 |An unsupported construct was detected in this library.                                                                                                                           |
+|           |        |      |Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.                                                                |
+| LBR-81    |Warning |   48 |Non-monotonic wireload model found.                                                                                                                                              |
+|           |        |      |Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.                         |
+| LBR-109   |Info    |    1 |Set default library domain.                                                                                                                                                      |
+| LBR-155   |Info    |  536 |Mismatch in unateness between 'timing_sense' attribute and the function.                                                                                                         |
+|           |        |      |The 'timing_sense' attribute will be respected.                                                                                                                                  |
+| LBR-161   |Info    |    1 |Setting the maximum print count of this message to 10 if information_level is less than 9.                                                                                       |
+| LBR-162   |Info    |   67 |Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed.                                                                                                          |
+|           |        |      |Setting the 'timing_sense' to non_unate.                                                                                                                                         |
+| LBR-412   |Info    |    1 |Created nominal operating condition.                                                                                                                                             |
+|           |        |      |The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively)  |
+|           |        |      | , or by the default PVT values (1.0,1.0,1.0).                                                                                                                                   |
+| LBR-702   |Warning |    6 |Missing pg_pin group in the library.                                                                                                                                             |
+| PHYS-12   |Warning |    7 |The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc.                            |
+|           |        |      |Check the consistency of the parameters, and see if you can ignore this message or you're using different LEF file with wrong parameters.                                        |
+| PHYS-13   |Warning |    1 |The value of the wire parameter is too big.                                                                                                                                      |
+|           |        |      |Check the consistency of the specified wire parameter.                                                                                                                           |
+| PHYS-25   |Warning |    4 |Minimum width of layer in LEF does not match minimum width of layer in cap table.                                                                                                |
+|           |        |      |Compare the layer MinWidth of the cap_table_file with the MinWidth (WIDTH)                                                                                                       |
+|           |        |      | of the corresponding layer in LEF. Set the attribute 'shrink_factor' to adjust the MinWidth layer value in the captable file                                                    |
+| PHYS-26   |Warning |    4 |No nominal temperature specified in cap table file.                                                                                                                              |
+|           |        |      |Nominal temperature is used for calculating the temperature dependent resistance.                                                                                                |
+| PHYS-128  |Warning |  850 |Library cell pin 'use' attribute is inconsistent between lib and LEF.                                                                                                            |
+|           |        |      |Overriding lib value with LEF value. To use .lib as golden do: '::legacy::set_attribute use_power_ground_pin_from_lef false'.                                                    |
+| PHYS-129  |Info    |   25 |Via with no resistance will have a value of '0.0' assigned for resistance value.                                                                                                 |
+|           |        |      |If this is the expected behavior, this message can be ignored.                                                                                                                   |
+| PHYS-279  |Warning |   13 |Physical cell not defined in library.                                                                                                                                            |
+|           |        |      |Ensure that the proper library files are available and have been imported.                                                                                                       |
+| PHYS-752  |Info    |    1 |Partition Based Synthesis execution skipped.                                                                                                                                     |
+| PHYS-2381 |Warning |    2 |Multiple ports are found on a pin without MUSTJOINALLPORTS in the pin property in the LEF file.                                                                                  |
+|           |        |      |This means that only one port would be connected, which may not be the expected behavior. Should consider adding MUSTJOINALLPORTS property.                                      |
+| SDC-201   |Warning |    2 |Unsupported SDC command option.                                                                                                                                                  |
+|           |        |      |The current version does not support this SDC command option.  However, future versions may be enhanced to support this option.                                                  |
+| SDC-202   |Error   |    2 |Could not interpret SDC command.                                                                                                                                                 |
+|           |        |      |The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.             |
+| SDC-204   |Error   |    1 |Invalid SDC command option combination.                                                                                                                                          |
+|           |        |      |This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.   |
+| SDC-209   |Warning |    1 |One or more commands failed when these constraints were applied.                                                                                                                 |
+|           |        |      |You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.                                                              |
+| SYNTH-1   |Info    |    1 |Synthesizing.                                                                                                                                                                    |
+| TIM-1000  |Info    |    1 |Multimode clock gating check is disabled.                                                                                                                                        |
+| TUI-32    |Warning |    2 |This attribute will be obsolete in a next major release.                                                                                                                         |
+| TUI-61    |Error   |    1 |A required object parameter could not be found.                                                                                                                                  |
+|           |        |      |Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.                                     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.255
+Via Resistance      : 4.339 ohm (from cap_table_file)
+Site size           : 3.180 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              V         0.00        0.000345  
+M2              H         1.00        0.000339  
+M3              V         1.00        0.000359  
+M4              H         1.00        0.000346  
+M5              V         1.00        0.000201  
+M6              H         1.00        0.000150  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              V         0.00         0.911886  
+M2              H         1.00         1.100879  
+M3              V         1.00         0.420464  
+M4              H         1.00         0.196217  
+M5              V         1.00         0.119537  
+M6              H         1.00         0.004127  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+li1             V         0.00         0.170000  
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Mapper: Libraries have:
+	domain ss_100C_1v60.setup_cond: 333 combo usable cells and 43 sequential usable cells
+Multi-threaded constant propagation [1|0] ...
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        0		  0%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             0		  0%
+  Excluded from clock-gating            0		  0%
+  User preserved                        0		  0%
+  Libcell unusable                      0		  0%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         1		100%
+Total flip-flops                        1		100%
+Total CG Modules                        0
+Multi-threaded Virtual Mapping    (8 threads, 8 of 8 CPUs usable)
+==================================
+Stage : first_condense 
+==================================
+  =================
+   Message Summary
+  =================
+---------------------------------------------------------------
+|  Id  |Sev  |Count |              Message Text               |
+---------------------------------------------------------------
+| GB-6 |Info |    1 |A datapath component has been ungrouped. |
+---------------------------------------------------------------
+ 
+Global mapping target info
+==========================
+Cost Group 'clk' target slack:   142 ps
+Target path end-point (Pin: data_r_reg/d)
+
+
+State Retention Synthesis Status
+================================
+
+Category                        Flops   Percentage
+--------------------------------------------------
+Total instances                     1        100.0
+Excluded from State Retention       1        100.0
+    - Will not convert              1        100.0
+      - Preserved                   0          0.0
+      - Power intent excluded       1        100.0
+    - Could not convert             0          0.0
+      - Scan type                   0          0.0
+      - No suitable cell            0          0.0
+State Retention instances           0          0.0
+--------------------------------------------------
+
+PBS_Generic_Opt-Post - Elapsed_Time 1, CPU_Time 0.9797829999999994
+stamp 'PBS_Generic_Opt-Post' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) | 100.0(100.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_Generic-Postgen HBO Optimizations - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Postgen HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) | 100.0(100.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+##>=================== Cadence Confidential (Generic-Logical) ===================
+##>=================== Cadence Confidential (Generic-Logical) ===================
+##>Main Thread Summary:
+##>----------------------------------------------------------------------------------------
+##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
+##>----------------------------------------------------------------------------------------
+##>G:Initial                            0         -         -        50       428       312
+##>G:Setup                              0         -         -         -         -         -
+##>G:Launch ST                          0         -         -         -         -         -
+##>G:Design Partition                   0         -         -         -         -         -
+##>G:Create Partition Netlists          0         -         -         -         -         -
+##>G:Init Power                         0         -         -         -         -         -
+##>G:Budgeting                          0         -         -         -         -         -
+##>G:Derenv-DB                          0         -         -         -         -         -
+##>G:Debug Outputs                      0         -         -         -         -         -
+##>G:ST loading                         0         -         -         -         -         -
+##>G:Distributed                        0         -         -         -         -         -
+##>G:Timer                              0         -         -         -         -         -
+##>G:Assembly                           0         -         -         -         -         -
+##>G:DFT                                0         -         -         -         -         -
+##>G:Const Prop                         0         -         -        62       569       312
+##>G:Misc                               1
+##>----------------------------------------------------------------------------------------
+##>Total Elapsed                        1
+##>========================================================================================
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'bsg_acm_cell' to generic gates.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_gen
+@file(syn.tcl) 67: puts "write_db -to_file pre_genus_maybe_syn_map" 
+write_db -to_file pre_genus_maybe_syn_map
+@file(syn.tcl) 68: write_db -to_file pre_genus_maybe_syn_map
+Finished exporting design database to file 'pre_genus_maybe_syn_map' for 'bsg_acm_cell' (command execution time mm:ss cpu = 00:00, real = 00:00).
+@file(syn.tcl) 69: puts "syn_map" 
+syn_map
+@file(syn.tcl) 70: syn_map
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+##Generic Timing Info for library domain: ss_100C_1v60.setup_cond typical gate delay: 291.0 ps std_slew: 35.6 ps std_load: 5.4 fF
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.255
+Via Resistance      : 4.339 ohm (from cap_table_file)
+Site size           : 3.180 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              V         0.00        0.000345  
+M2              H         1.00        0.000339  
+M3              V         1.00        0.000359  
+M4              H         1.00        0.000346  
+M5              V         1.00        0.000201  
+M6              H         1.00        0.000150  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              V         0.00         0.911886  
+M2              H         1.00         1.100879  
+M3              V         1.00         0.420464  
+M4              H         1.00         0.196217  
+M5              V         1.00         0.119537  
+M6              H         1.00         0.004127  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+li1             V         0.00         0.170000  
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Info    : Mapping. [SYNTH-4]
+        : Mapping 'bsg_acm_cell' using 'high' effort.
+Mapper: Libraries have:
+	domain ss_100C_1v60.setup_cond: 333 combo usable cells and 43 sequential usable cells
+Configuring mapper costing (none)
+TNS Restructuring config: no_value at stage: map applied.
+PBS_TechMap-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) |  49.5(100.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:01(00:00:00) |  50.5(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_TechMap-Premap HBO Optimizations - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Premap HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) |  49.5(100.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:01(00:00:00) |  50.5(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed mapping optimization to kick in.
+Current PLE settings:
+
+Aspect ratio        : 1.000
+Shrink factor       : 1.000
+Scale of res/length : 1.000
+Scale of cap/length : 1.000
+Net derating factor : 1.000
+Thermal factor      : 1.255
+Via Resistance      : 4.339 ohm (from cap_table_file)
+Site size           : 3.180 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              V         0.00        0.000345  
+M2              H         1.00        0.000339  
+M3              V         1.00        0.000359  
+M4              H         1.00        0.000346  
+M5              V         1.00        0.000201  
+M6              H         1.00        0.000150  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              V         0.00         0.911886  
+M2              H         1.00         1.100879  
+M3              V         1.00         0.420464  
+M4              H         1.00         0.196217  
+M5              V         1.00         0.119537  
+M6              H         1.00         0.004127  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+li1             V         0.00         0.170000  
+met1            H         1.00         0.140000  
+met2            V         1.00         0.140000  
+met3            H         1.00         0.300000  
+met4            V         1.00         0.300000  
+met5            H         1.00         1.600000  
+
+Mapper: Libraries have:
+	domain ss_100C_1v60.setup_cond: 333 combo usable cells and 43 sequential usable cells
+Multi-threaded Virtual Mapping    (8 threads, 8 of 8 CPUs usable)
+ 
+Global mapping target info
+==========================
+Cost Group 'clk' target slack:   142 ps
+Target path end-point (Pin: data_r_reg/d)
+
+Multi-threaded Technology Mapping (8 threads, 8 of 8 CPUs usable)
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_map                  352        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+           clk               142     1012             10000 
+
+ 
+Global incremental target info
+==============================
+Cost Group 'clk' target slack:    94 ps
+Target path end-point (Pin: data_r_reg/D (sky130_fd_sc_hd__dfxtp_1/D))
+
+==================================
+Stage : global_incr_map 
+==================================
+  =================
+   Message Summary
+  =================
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|    Id    |  Sev   |Count |                                                                      Message Text                                                                       |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| LBR-81   |Warning |   12 |Non-monotonic wireload model found.                                                                                                                      |
+|          |        |      |Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape. |
+| LBR-155  |Info    |  134 |Mismatch in unateness between 'timing_sense' attribute and the function.                                                                                 |
+|          |        |      |The 'timing_sense' attribute will be respected.                                                                                                          |
+| PA-7     |Info    |    6 |Resetting power analysis results.                                                                                                                        |
+|          |        |      |All computed switching activities are removed.                                                                                                           |
+| PHYS-752 |Info    |    1 |Partition Based Synthesis execution skipped.                                                                                                             |
+| SYNTH-2  |Info    |    1 |Done synthesizing.                                                                                                                                       |
+| SYNTH-4  |Info    |    1 |Mapping.                                                                                                                                                 |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_incr                 344        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+           clk                94     1011             10000 
+
+
+State Retention Synthesis Status
+================================
+
+Category                        Flops   Percentage
+--------------------------------------------------
+Total instances                     1        100.0
+Excluded from State Retention       1        100.0
+    - Will not convert              1        100.0
+      - Preserved                   0          0.0
+      - Power intent excluded       1        100.0
+    - Could not convert             0          0.0
+      - Scan type                   0          0.0
+      - No suitable cell            0          0.0
+State Retention instances           0          0.0
+--------------------------------------------------
+
+INFO: skipping constant propagation
+PBS_Techmap-Global Mapping - Elapsed_Time 1, CPU_Time -0.04348099999999988
+stamp 'PBS_Techmap-Global Mapping' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) |  50.6( 50.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:01(00:00:00) |  51.6(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:08) |  00:00:00(00:00:01) |  -2.2( 50.0) |    8:05:05 (Jun03) |  312.5 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Warning : Command 'commit_power_intent' cannot proceed as there is no power intent loaded. [CPI-506]
+        : Command 'commit_power_intent' requires a valid power_intent to be loaded.
+Info    : Wrote formal verification information. [CFM-5]
+        : Wrote 'fv/bsg_acm_cell/fv_map.fv.json' for netlist 'fv/bsg_acm_cell/fv_map.v.gz'.
+Info    : Forcing flat compare. [CFM-212]
+        : The design hierarchies are too small to qualify for hierarchical comparison. Set the attribute wlec_hier_comp_threshold accordingly for hier compare.
+Info    : Wrote dofile. [CFM-1]
+        : Dofile is 'fv/bsg_acm_cell/rtl_to_fv_map.do'.
+        : Alias mapping flow is enabled.
+PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 1, CPU_Time 1.0
+stamp 'PBS_TechMap-Datapath Postmap Operations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) |  33.4( 33.3) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:01(00:00:00) |  34.1(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:08) |  00:00:00(00:00:01) |  -1.5( 33.3) |    8:05:05 (Jun03) |  312.5 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:01(00:00:01) |  34.1( 33.3) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 0, CPU_Time -9.399999999892827e-5
+stamp 'PBS_TechMap-Postmap HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) |  33.4( 33.3) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:01(00:00:00) |  34.1(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:08) |  00:00:00(00:00:01) |  -1.5( 33.3) |    8:05:05 (Jun03) |  312.5 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:01(00:00:01) |  34.1( 33.3) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) | -01:59:51(00:00:00) |  -0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+ Doing ConstProp on design:bsg_acm_cell ... 
+
+IOPT-REDREM: Performing redundancy removal: Detected 0 redundant wires. CPU time 0.000 seconds.
+
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        0		  0%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             0		  0%
+  Excluded from clock-gating            0		  0%
+  User preserved                        0		  0%
+  Libcell unusable                      0		  0%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         1		100%
+Total flip-flops                        1		100%
+Total CG Modules                        0
+  Decloning clock-gating logic from design:bsg_acm_cell
+Clock-gating declone status
+===========================
+Total number of clock-gating instances before: 0
+Total number of clock-gating instances after : 0
+Time taken by ConstProp Step: 00:00:00
+PBS_TechMap-Postmap Clock Gating - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Postmap Clock Gating' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) |  33.4( 33.3) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:01(00:00:00) |  34.1(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:08) |  00:00:00(00:00:01) |  -1.5( 33.3) |    8:05:05 (Jun03) |  312.5 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:01(00:00:01) |  34.1( 33.3) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) | -01:59:51(00:00:00) |  -0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Huge' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Large' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Medium' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'Small' is non-monotonic.
+-------------------------------------------------------------------------------
+ hi_fo_buf                   344        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       hi_fo_buf         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+ init_delay                  344        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+    plc_st_fence         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      plc_laf_st         0  (        0 /        0 )  0.00
+ plc_laf_st_fence         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+
+ 
+Local TNS optimization status
+=============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+ init_tns                    344        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+
+PBS_TechMap-Postmap Cleanup - Elapsed_Time 0, CPU_Time -0.000309000000001447
+stamp 'PBS_TechMap-Postmap Cleanup' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) |  33.4( 33.3) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:01(00:00:00) |  34.1(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:08) |  00:00:00(00:00:01) |  -1.5( 33.3) |    8:05:05 (Jun03) |  312.5 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:01(00:00:01) |  34.1( 33.3) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) | -01:59:51(00:00:00) |  -0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:00(00:00:00) |  -0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap Cleanup
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_Techmap-Post_MBCI - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Techmap-Post_MBCI' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:06) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:03 (Jun03) |  312.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:01) |  33.4( 33.3) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:09(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:01(00:00:00) |  34.1(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:07) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:04 (Jun03) |  312.5 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:08) |  00:00:00(00:00:01) |  -1.5( 33.3) |    8:05:05 (Jun03) |  312.5 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:01(00:00:01) |  34.1( 33.3) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) | -01:59:51(00:00:00) |  -0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:00(00:00:00) |  -0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_TechMap-Postmap Cleanup
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:11(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    8:05:06 (Jun03) |  312.5 MB | PBS_Techmap-Post_MBCI
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+##>=================== Cadence Confidential (Mapping-Logical) ===================
+##>Main Thread Summary:
+##>----------------------------------------------------------------------------------------
+##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
+##>----------------------------------------------------------------------------------------
+##>M:Initial                            0         -         -        62       569       312
+##>M:Pre Cleanup                        0         -         -        62       569       312
+##>M:Setup                              0         -         -         -         -         -
+##>M:Launch ST                          0         -         -         -         -         -
+##>M:Design Partition                   0         -         -         -         -         -
+##>M:Create Partition Netlists          0         -         -         -         -         -
+##>M:Init Power                         0         -         -         -         -         -
+##>M:Budgeting                          0         -         -         -         -         -
+##>M:Derenv-DB                          0         -         -         -         -         -
+##>M:Debug Outputs                      0         -         -         -         -         -
+##>M:ST loading                         0         -         -         -         -         -
+##>M:Distributed                        0         -         -         -         -         -
+##>M:Timer                              0         -         -         -         -         -
+##>M:Assembly                           0         -         -         -         -         -
+##>M:DFT                                0         -         -         -         -         -
+##>M:DP Operations                      1         -         -        18       206       312
+##>M:Const Prop                         0      1010         0        18       206       312
+##>M:Cleanup                            0      1010         0        18       206       312
+##>M:MBCI                               0         -         -        18       206       312
+##>M:Const Gate Removal                 0         -         -         -         -         -
+##>M:Misc                               1
+##>----------------------------------------------------------------------------------------
+##>Total Elapsed                        2
+##>========================================================================================
+Info    : Done mapping. [SYNTH-5]
+        : Done mapping 'bsg_acm_cell'.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_map
+@file(syn.tcl) 71: puts "write_db -to_file pre_add_tieoffs" 
+write_db -to_file pre_add_tieoffs
+@file(syn.tcl) 72: write_db -to_file pre_add_tieoffs
+Finished exporting design database to file 'pre_add_tieoffs' for 'bsg_acm_cell' (command execution time mm:ss cpu = 00:00, real = 00:00).
+@file(syn.tcl) 73: puts "set_db message:WSDF-201 .max_print 20" 
+set_db message:WSDF-201 .max_print 20
+@file(syn.tcl) 74: set_db message:WSDF-201 .max_print 20
+  Setting attribute of message 'WSDF-201': 'max_print' = 20
+@file(syn.tcl) 75: puts "set_db use_tiehilo_for_const duplicate" 
+set_db use_tiehilo_for_const duplicate
+@file(syn.tcl) 76: set_db use_tiehilo_for_const duplicate
+  Setting attribute of root '/': 'use_tiehilo_for_const' = duplicate
+@file(syn.tcl) 77: puts "add_tieoffs -high sky130_fd_sc_hd__conb_1 -low sky130_fd_sc_hd__conb_1 -max_fanout 1 -verbose" 
+add_tieoffs -high sky130_fd_sc_hd__conb_1 -low sky130_fd_sc_hd__conb_1 -max_fanout 1 -verbose
+@file(syn.tcl) 78: add_tieoffs -high sky130_fd_sc_hd__conb_1 -low sky130_fd_sc_hd__conb_1 -max_fanout 1 -verbose
+Info    : Connecting constant net to TIELO/TIEHI cells. [UTUI-207]
+        : Connecting all 1'b0 in module module:bsg_acm_cell/bsg_popcount_width_p8, tielo_cell is lib_cell:ss_100C_1v60.setup_set/sky130_fd_sc_hd__ss_100C_1v60/sky130_fd_sc_hd__conb_1, tiehi_cell is lib_cell:ss_100C_1v60.setup_set/sky130_fd_sc_hd__ss_100C_1v60/sky130_fd_sc_hd__conb_1.
+@file(syn.tcl) 79: puts "write_db -to_file pre_write_regs" 
+write_db -to_file pre_write_regs
+@file(syn.tcl) 80: write_db -to_file pre_write_regs
+Finished exporting design database to file 'pre_write_regs' for 'bsg_acm_cell' (command execution time mm:ss cpu = 00:00, real = 00:00).
+@file(syn.tcl) 82:         set write_cells_ir "./find_regs_cells.json"
+@file(syn.tcl) 83:         set write_cells_ir [open $write_cells_ir "w"]
+@file(syn.tcl) 84:         puts $write_cells_ir "\["
+@file(syn.tcl) 86:         set refs [get_db [get_db lib_cells -if .is_sequential==true] .base_name]
+@file(syn.tcl) 88:         set len [llength $refs]
+@file(syn.tcl) 90:         for {set i 0} {$i < [llength $refs]} {incr i} {
+            if {$i == $len - 1} {
+                puts $write_cells_ir "    \"[lindex $refs $i]\""
+            } else {
+                puts $write_cells_ir "    \"[lindex $refs $i]\","
+            }
+        }
+@file(syn.tcl) 98:         puts $write_cells_ir "\]"
+@file(syn.tcl) 99:         close $write_cells_ir
+@file(syn.tcl) 100:         set write_regs_ir "./find_regs_paths.json"
+@file(syn.tcl) 101:         set write_regs_ir [open $write_regs_ir "w"]
+@file(syn.tcl) 102:         puts $write_regs_ir "\["
+@file(syn.tcl) 104:         set regs [get_db [get_db [all_registers -edge_triggered -output_pins] -if .direction==out] .name]
+@file(syn.tcl) 106:         set len [llength $regs]
+@file(syn.tcl) 108:         for {set i 0} {$i < [llength $regs]} {incr i} {
+            #regsub -all {/} [lindex $regs $i] . myreg
+            set myreg [lindex $regs $i]
+            if {$i == $len - 1} {
+                puts $write_regs_ir "    \"$myreg\""
+            } else {
+                puts $write_regs_ir "    \"$myreg\","
+            }
+        }
+@file(syn.tcl) 118:         puts $write_regs_ir "\]"
+@file(syn.tcl) 120:         close $write_regs_ir
+@file(syn.tcl) 122: puts "write_db -to_file pre_generate_reports" 
+write_db -to_file pre_generate_reports
+@file(syn.tcl) 123: write_db -to_file pre_generate_reports
+Finished exporting design database to file 'pre_generate_reports' for 'bsg_acm_cell' (command execution time mm:ss cpu = 00:00, real = 00:00).
+@file(syn.tcl) 124: puts "write_reports -directory reports -tag final" 
+write_reports -directory reports -tag final
+@file(syn.tcl) 125: write_reports -directory reports -tag final
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_gates -power.
+Info   : ACTP-0001 [ACTPInfo] Activity propagation started for stim#0 netlist
+       : bsg_acm_cell
+Info   : ACTP-0009 [ACTPInfo] Activity Propagation Progress Report :   1%   2%   3%   4%   5%   6%   7%   8%  10%  11%  12%  13%  14%  15%  16%  17%  19%  20%  21%  22%  23%  24%  25%  26%  28%  29%  30%  31%  32%  33%  34%  35%  37%  38%  39%  40%  41%  42%  43%  44%  46%  47%  48%  49%  50%  51%  52%  53%  55%  56%  57%  58%  59%  60%  61%  62%  64%  65%  66%  67%  68%  69%  70%  71%  73%  74%  75%  76%  77%  78%  79%  80%  82%  83%  84%  85%  86%  87%  88%  89%  91%  92%  93%  94%  95%  96%  97%  98% 100%
+Info   : ACTP-0001 Activity propagation ended for stim#0
+Info   : PWRA-0001 [PwrInfo] compute_power effective options 
+       : -mode : vectorless
+       : -skip_propagation : 1
+       : -frequency_scaling_factor : 1.0
+       : -use_clock_freq : stim
+       : -stim :/stim#0
+       : -fromGenus : 1
+Info   : ACTP-0001 Timing initialization started
+Info   : ACTP-0001 Timing initialization ended
+Info   : PWRA-0002 [PwrInfo] Skipping activity propagation due to -skip_ap
+       : option....
+Warning: PWRA-0302 [PwrWarn] Frequency scaling is not applicable for vectorless
+       : flow. Ignoring frequency scaling.
+Warning: PWRA-0304 [PwrWarn] -stim option is not applicable with vectorless mode
+       : of power analysis, ignored this option.
+Info   : PWRA-0002 Started 'vectorless' power computation.
+Warning : Violating paths are less than num_paths/max_paths. [CHKTIM-19]
+        : Only 2 violating paths found
+        : The timing query has number of violating paths less than requested num_paths/max_paths.
+
+
+Working Directory = /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir
+QoS Summary for bsg_acm_cell
+================================================================================
+Metric                          final          
+================================================================================
+Slack (ps):                     1,011
+  R2R (ps):                     8,144
+  I2R (ps):                     1,011
+  R2O (ps):                     4,136
+  I2O (ps):                  no_value
+  CG  (ps):                  no_value
+TNS (ps):                           0
+  R2R (ps):                         0
+  I2R (ps):                         0
+  R2O (ps):                         0
+  I2O (ps):                  no_value
+  CG  (ps):                  no_value
+Failing Paths:                      0
+Cell Area:                        210
+Total Cell Area:                  210
+Leaf Instances:                    19
+Total Instances:                   19
+Utilization (%):                 0.00
+Tot. Net Length (um):        no_value
+Avg. Net Length (um):        no_value
+Route Overflow H (%):        no_value
+Route Overflow V (%):        no_value
+MBCI(%) (bits/gate) :            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value
+  Tot Cong:                  no_value
+================================================================================
+CPU  Runtime (h:m:s):        00:00:08
+Real Runtime (h:m:s):        00:00:09
+CPU  Elapsed (h:m:s):        00:00:13
+Real Elapsed (h:m:s):        00:00:12
+Memory (MB):                  1170.00
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:00:09
+Total Memory (MB):     1170.00
+Executable Version:    21.12-s068_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+Info   : PWRA-0002 Finished power computation.
+Info   : PWRA-0007 [PwrInfo] Completed successfully.
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(syn.tcl) 126: puts "write_db -to_file pre_write_outputs" 
+write_db -to_file pre_write_outputs
+@file(syn.tcl) 127: write_db -to_file pre_write_outputs
+Finished exporting design database to file 'pre_write_outputs' for 'bsg_acm_cell' (command execution time mm:ss cpu = 00:00, real = 00:00).
+@file(syn.tcl) 128: puts "update_names -suffix _mapped -module" 
+update_names -suffix _mapped -module
+@file(syn.tcl) 129: update_names -suffix _mapped -module
+Warning : Port names affected by change_names do not automatically get updated in written out SV wrapper module. [CHNM-108] [update_names]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_name  
+    need to be updated manually in the written out SV wrapper module.
+        : If user is setting write_sv_port_wrapper = true then the port names affected by usage of change_name need to be updated manually in the written out SV wrapper module.
+@file(syn.tcl) 130: puts "write_hdl > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v" 
+write_hdl > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v
+@file(syn.tcl) 131: write_hdl > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.v
+@file(syn.tcl) 132: puts "write_script > bsg_acm_cell.mapped.scr" 
+write_script > bsg_acm_cell.mapped.scr
+@file(syn.tcl) 133: write_script > bsg_acm_cell.mapped.scr
+Warning : This command will be obsolete in a next major release. [TUI-37]
+        : Use 'write_db -common' for saving design databases to operate with other Cadence tools. Use 'write_design' in future releases for saving files for operations with non-Cadence tools.
+
+@file(syn.tcl) 134: puts "write_sdc -view ss_100C_1v60.setup_view > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdc" 
+write_sdc -view ss_100C_1v60.setup_view > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdc
+@file(syn.tcl) 135: write_sdc -view ss_100C_1v60.setup_view > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdc
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+@file(syn.tcl) 136: puts "write_sdf -nosplit_timing_check -timescale ns > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf" 
+write_sdf -nosplit_timing_check -timescale ns > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf
+@file(syn.tcl) 137: write_sdf -nosplit_timing_check -timescale ns > /home/wuc29/ee526/Arnolds-Cat-Map-Image-Encryption/ASIC/encryptor/bsg_acm_cell/build/syn-rundir/bsg_acm_cell.mapped.sdf
+Warning : Default value for an option has changed in this release. [WSDF-104]
+        : Default value for -setuphold has changed from split to merge_always. Specify '-setuphold split' to preserve the behavior of the previous release.
+        : Specify the option explicitly.
+Warning : Default value for an option has changed in this release. [WSDF-104]
+        : Default value for -recrem has changed from split to merge_always. Specify '-recrem split' to preserve the behavior of the previous release.
+Warning : No delay description exists for an instance. [WSDF-201]
+        : Cell COUNT_ONE/tie_0_cell.
+        : The timing arc of the instance does not exist or is disabled by disable_timing or constant value. The delay information will not be generated for the instance. The instance could be a loop breaker or its inputs could be driven by constant
+@file(syn.tcl) 138: puts "write_design -innovus -hierarchical -gzip_files bsg_acm_cell" 
+write_design -innovus -hierarchical -gzip_files bsg_acm_cell
+@file(syn.tcl) 139: write_design -innovus -hierarchical -gzip_files bsg_acm_cell
+Warning : This command will be obsolete in a next major release. [TUI-37]
+        : Option '-innovus' is being obsoleted. Use 'write_db -common' for saving design databases to operate with other Cadence tools. Use 'write_design' in future releases for saving files for operations with non-Cadence tools.
+
+Warning : This command will be obsolete in a next major release. [TUI-37]
+        : Option '-hierarchical' is being obsoleted. Use 'write_db -common' for saving design databases to operate with other Cadence tools. Use 'write_design' in future releases for saving files for operations with non-Cadence tools.
+
+(write_design): Writing Innovus content. Constraint interface is: 'mmmc2'
+(write_design): Writing Genus content. Constraint interface is 'mmmc2'
+Warning : Attribute design_process_node is not set for this design. [PHYS-1011]
+        : Missing data.
+        : When attribute design_process_node is not set to an appropriate integer value >=5 and <=250, then Innovus will assume its own default value for the design process node. See the Innovus setDesignMode -process <> command for more information about what this setting does.
+Exporting design data for 'bsg_acm_cell' to genus_invs_des/genus...
+%# Begin write_design (06/03 08:05:07, mem=1191.00M)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   write_design
+No loop breaker instances found (cdn_loop_breaker).
+File genus_invs_des/genus.mmmc.tcl has been written.
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+Info: file genus_invs_des/genus.my_constraint_mode.sdc has been written
+Info: file genus_invs_des/genus.my_constraint_mode.sdc has been written
+
+Number of user defined NDR nets found: 0
+
+Number of NDR nets found: 0
+Number of nets with minimum layer assignments: 0
+
+** To load the database source genus_invs_des/genus.invs_setup.tcl in an Innovus session.
+** To load the database source genus_invs_des/genus.genus_setup.tcl in an Genus(TM) Synthesis Solution session.
+Finished exporting design data for 'bsg_acm_cell' (command execution time mm:ss cpu = 00:01, real = 00:01).
+.
+%# End write_design (06/03 08:05:08, total cpu=08:00:01, real=08:00:01, peak res=626.20M, current mem=1195.00M)
+@file(syn.tcl) 140: puts "quit" 
+quit
+@file(syn.tcl) 141: quit
+
+Lic Summary:
+[08:05:08.426538] Cdslmd servers: swlic11
+[08:05:08.426547] Feature usage summary:
+[08:05:08.426547] Genus_Synthesis
+
