@@ -27,6 +27,11 @@ If you already cloned the project and forgot `--recurse-submodules`, you can use
 git submodule update --init --recursive
 ```
 
+Go into the [ee477-hammer-cad](#ASIC/ee477-hammer-cad) directory and run the following command to get the hammer design flow tool
+
+```
+make
+```
 
 
 ## Install Python-Dependences
